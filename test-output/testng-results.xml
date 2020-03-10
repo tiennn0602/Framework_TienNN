@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Nop Commerce" duration-ms="15748" started-at="2020-03-09T09:04:57Z" finished-at="2020-03-09T09:05:13Z">
+  <suite name="Nop Commerce" duration-ms="18813" started-at="2020-03-10T08:57:08Z" finished-at="2020-03-10T08:57:27Z">
     <groups>
     </groups>
-    <test name="Run on Firefox" duration-ms="15748" started-at="2020-03-09T09:04:57Z" finished-at="2020-03-09T09:05:13Z">
-      <class name="com.nopcommerce.payment.Level_01_Step_By_Step">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nopcommerce.payment.Level_01_Step_By_Step@6a024a67]" name="beforeClass" is-config="true" duration-ms="5696" started-at="2020-03-09T16:04:57Z" finished-at="2020-03-09T16:05:03Z">
+    <test name="Run on Firefox" duration-ms="18813" started-at="2020-03-10T08:57:08Z" finished-at="2020-03-10T08:57:27Z">
+      <class name="com.nopcommerce.payment.Level_02_AbstractPage_01">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nopcommerce.payment.Level_02_AbstractPage_01@5cc7c2a6]" name="beforeClass" is-config="true" duration-ms="7646" started-at="2020-03-10T15:57:08Z" finished-at="2020-03-10T15:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_01_Step_By_Step@6a024a67]" name="TC_01_Register" duration-ms="6613" started-at="2020-03-09T16:05:03Z" finished-at="2020-03-09T16:05:09Z">
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_02_AbstractPage_01@5cc7c2a6]" name="TC_01_Register" duration-ms="7381" started-at="2020-03-10T15:57:16Z" finished-at="2020-03-10T15:57:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Register -->
-        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_01_Step_By_Step@6a024a67]" name="TC_02_Login" duration-ms="2999" started-at="2020-03-09T16:05:09Z" finished-at="2020-03-09T16:05:12Z">
+        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_02_AbstractPage_01@5cc7c2a6]" name="TC_02_Login" duration-ms="2480" started-at="2020-03-10T15:57:23Z" finished-at="2020-03-10T15:57:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02_Login -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_01_Step_By_Step@6a024a67]" name="afterClass" is-config="true" duration-ms="427" started-at="2020-03-09T16:05:12Z" finished-at="2020-03-09T16:05:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_02_AbstractPage_01@5cc7c2a6]" name="afterClass" is-config="true" duration-ms="1291" started-at="2020-03-10T15:57:26Z" finished-at="2020-03-10T15:57:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.payment.Level_01_Step_By_Step -->
+      </class> <!-- com.nopcommerce.payment.Level_02_AbstractPage_01 -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- Nop Commerce -->
 </testng-results>

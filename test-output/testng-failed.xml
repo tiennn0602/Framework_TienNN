@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Nop Commerce]">
+  <test name="Run on Firefox">
     <classes>
-      <class name="com.nopcommerce.payment.Level_01_Step_By_Step">
-        <methods>
-          <include name="afterClass"/>
-          <include name="TC_02_Login"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.nopcommerce.payment.Level_01_Step_By_Step -->
+      <class name="com.nopcommerce.payment.Level_02_AbstractPage_01"/>
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Run on Firefox -->
+</suite> <!-- Failed suite [Nop Commerce] -->
