@@ -2,7 +2,7 @@
 <suite name="Nop Commerce" parallel="false">
   <test name="Run on Firefox">
     <classes>
-      <class name="com.nopcommerce.payment.Level_02_AbstractPage_01_Init"/>
+      <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
