@@ -60,6 +60,4 @@ public class RegisterPageObject extends AbstractPage{
 		waitToElementVisible(RegisterPageUI.LOGOUT_LINK);
 		clickToElement(RegisterPageUI.LOGOUT_LINK);		
 	}
-
-
 }

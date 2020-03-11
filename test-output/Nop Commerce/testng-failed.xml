@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Nop Commerce]">
+  <test name="Run on Firefox">
+    <classes>
+      <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern"/>
+    </classes>
+  </test> <!-- Run on Firefox -->
+</suite> <!-- Failed suite [Nop Commerce] -->

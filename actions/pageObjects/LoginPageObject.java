@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPage;
 import pageUIs.LoginPageUI;
+import pageUIs.RegisterPageUI;
 
 public class LoginPageObject extends AbstractPage {
 
@@ -25,6 +26,21 @@ public class LoginPageObject extends AbstractPage {
 		waitToElementVisible(LoginPageUI.LOGIN_BUTTON);
 		clickToElement(LoginPageUI.LOGIN_BUTTON);
 		
+	}
+
+	public boolean isErrorMessageDisplayed() {
+		waitToElementVisible(LoginPageUI.EMPTY_EMAIL_ERROR);
+		return isElementDisplayed(LoginPageUI.EMPTY_EMAIL_ERROR);
+	}
+
+	public boolean isErrorPasswordDisplayed() {
+		waitToElementVisible(LoginPageUI.PASSWORD_ERROR);
+		return isElementDisplayed(LoginPageUI.PASSWORD_ERROR);
+	}
+
+	public boolean isWrongEmailMessageDisplayed() {
+		waitToElementVisible(LoginPageUI.WRONG_EMAIL_FORMAT);
+		return isElementDisplayed(LoginPageUI.WRONG_EMAIL_FORMAT);
 	}
 
 }
