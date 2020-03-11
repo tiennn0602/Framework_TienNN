@@ -32,7 +32,7 @@ public class AbstractPage {
 		waitExplicit = new WebDriverWait(driverGlobal,longTimeout);
 		action = new Actions(driverGlobal);	//tham so la driver, ta truyen o day
 	}
-
+	
 	public void openUrl(String urlValue){
 		driverGlobal.get(urlValue);		
 	}

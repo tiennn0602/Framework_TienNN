@@ -1,19 +1,29 @@
 package pageObjects;
 
-public class LoginPageObject {
+import org.openqa.selenium.WebDriver;
+
+import commons.AbstractPage;
+import pageUIs.LoginPageUI;
+
+public class LoginPageObject extends AbstractPage {
+
+	public LoginPageObject(WebDriver driverLocal) {
+		super(driverLocal);
+	}
 
 	public void inputToEmailTextbox(String email) {
-		// TODO Auto-generated method stub
-		
+		waitToElementVisible(LoginPageUI.EMAIL_TEXTBOX);
+		sendKeytoElement(LoginPageUI.EMAIL_TEXTBOX, email);
 	}
 
 	public void inputToPasswordTextbox(String string) {
-		// TODO Auto-generated method stub
-		
+		waitToElementVisible(LoginPageUI.PASSWORD_TEXTBOX);
+		sendKeytoElement(LoginPageUI.PASSWORD_TEXTBOX, "123456");
 	}
 
 	public void clickLoginButton() {
-		// TODO Auto-generated method stub
+		waitToElementVisible(LoginPageUI.LOGIN_BUTTON);
+		clickToElement(LoginPageUI.LOGIN_BUTTON);
 		
 	}
 

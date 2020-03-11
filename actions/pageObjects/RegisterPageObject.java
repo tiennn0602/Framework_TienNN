@@ -1,50 +1,65 @@
 package pageObjects;
 
-public class RegisterPageObject {
+import org.openqa.selenium.WebDriver;
+
+import commons.AbstractPage;
+import pageUIs.RegisterPageUI;
+
+public class RegisterPageObject extends AbstractPage{
+	public RegisterPageObject(WebDriver driverLocal) {
+		super(driverLocal);
+	}
 
 	public void clickToMaleRadioButton() {
-		// TODO Auto-generated method stub
-		
+		waitToElementVisible(RegisterPageUI.GENDER_MALE_RADIO);
+		clickToElement(RegisterPageUI.GENDER_MALE_RADIO);	
 	}
 
-	public void inputToFirstnameTextbox(String string) {
-		// TODO Auto-generated method stub
-		
+	public void inputToFirstnameTextbox(String firstNameValue) {
+		waitToElementVisible(RegisterPageUI.FIRST_NAME_TEXTBOX);
+		sendKeytoElement(RegisterPageUI.FIRST_NAME_TEXTBOX, firstNameValue);
 	}
 
-	public void inputToLastnameTextbox(String string) {
-		// TODO Auto-generated method stub
-		
+	public void inputToLastnameTextbox(String lastNameValue) {
+		waitToElementVisible(RegisterPageUI.LAST_NAME_TEXTBOX);
+		sendKeytoElement(RegisterPageUI.LAST_NAME_TEXTBOX, lastNameValue);
 	}
 
 	public void inputToEmailTextbox(String email) {
-		// TODO Auto-generated method stub
-		
+		waitToElementVisible(RegisterPageUI.EMAIL_TEXTBOX);
+		sendKeytoElement(RegisterPageUI.EMAIL_TEXTBOX, email);
 	}
 
-	public void inputToPasswordTextbox(String string) {
-		// TODO Auto-generated method stub
-		
+	public void inputToPasswordTextbox(String passwordValue) {
+		waitToElementVisible(RegisterPageUI.PASSWORD_TEXTBOX);
+		sendKeytoElement(RegisterPageUI.PASSWORD_TEXTBOX, passwordValue);
 	}
 
-	public void inputToConfirmPasswordTextbox(String string) {
-		// TODO Auto-generated method stub
+	public void inputToConfirmPasswordTextbox(String confirmPasswordValue) {
+		waitToElementVisible(RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
+		sendKeytoElement(RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, confirmPasswordValue);
 		
 	}
 
 	public void clickRegisterButton() {
-		// TODO Auto-generated method stub
-		
+		waitToElementVisible(RegisterPageUI.REGISTER_BUTTON);
+		clickToElement(RegisterPageUI.REGISTER_BUTTON);	
 	}
 
 	public boolean isSuccessfulMessageDisplayed() {
-		// TODO Auto-generated method stub
-		return false;
+		waitToElementVisible(RegisterPageUI.SUCCESSFUL_REGISTER_MESSAGE);
+		return isElementDisplayed(RegisterPageUI.SUCCESSFUL_REGISTER_MESSAGE);
 	}
 
-	public void clickLogoutLink() {
-		// TODO Auto-generated method stub
-		
+	public String getSucessfulRegistrationText() {
+		waitToElementVisible(RegisterPageUI.SUCCESSFUL_REGISTER_TEXT);
+		return getTextElement(RegisterPageUI.SUCCESSFUL_REGISTER_TEXT);
 	}
+	
+	public void clickLogoutLink() {
+		waitToElementVisible(RegisterPageUI.LOGOUT_LINK);
+		clickToElement(RegisterPageUI.LOGOUT_LINK);		
+	}
+
 
 }
