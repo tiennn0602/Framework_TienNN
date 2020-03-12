@@ -2,10 +2,10 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
-import commons.AbstractPage;
+import commons.AbstractPageObject;
 import pageUIs.RegisterPageUI;
 
-public class RegisterPageObject extends AbstractPage{
+public class RegisterPageObject extends AbstractPageObject{
 	public RegisterPageObject(WebDriver driverLocal) {
 		super(driverLocal);
 	}

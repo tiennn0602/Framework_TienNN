@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AbstractPage {
+public class AbstractPageObject {
 	
 	By by;
 	Select select;
@@ -26,7 +26,7 @@ public class AbstractPage {
 	WebDriverWait waitExplicit;
 	JavascriptExecutor jsExecutor;
 	
-	public AbstractPage(WebDriver driverLocal) {
+	public AbstractPageObject(WebDriver driverLocal) {
 		driverGlobal = driverLocal;
 		jsExecutor = (JavascriptExecutor) driverGlobal;
 		waitExplicit = new WebDriverWait(driverGlobal,longTimeout);

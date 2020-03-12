@@ -1,41 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Nop Commerce" duration-ms="19072" started-at="2020-03-11T08:32:03Z" finished-at="2020-03-11T08:32:22Z">
+  <suite name="Nop Commerce" duration-ms="40290" started-at="2020-03-12T08:40:44Z" finished-at="2020-03-12T08:41:25Z">
     <groups>
     </groups>
-    <test name="Run on Firefox" duration-ms="19072" started-at="2020-03-11T08:32:03Z" finished-at="2020-03-11T08:32:22Z">
+    <test name="Run on Firefox" duration-ms="40290" started-at="2020-03-12T08:40:44Z" finished-at="2020-03-12T08:41:25Z">
       <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="beforeClass" is-config="true" duration-ms="7318" started-at="2020-03-11T15:32:03Z" finished-at="2020-03-11T15:32:10Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="beforeClass" is-config="true" duration-ms="6463" started-at="2020-03-12T15:40:44Z" finished-at="2020-03-12T15:40:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="TC_01_Register" duration-ms="6417" started-at="2020-03-11T15:32:10Z" finished-at="2020-03-11T15:32:16Z">
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="TC_01_Register" duration-ms="7103" started-at="2020-03-12T15:40:51Z" finished-at="2020-03-12T15:40:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Register -->
-        <test-method status="PASS" signature="TC_02_LoginWithEmailAndPasswordEmpty()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="TC_02_LoginWithEmailAndPasswordEmpty" duration-ms="1456" started-at="2020-03-11T15:32:16Z" finished-at="2020-03-11T15:32:18Z">
+        <test-method status="PASS" signature="TC_02_LoginWithEmailAndPasswordEmpty()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="TC_02_LoginWithEmailAndPasswordEmpty" duration-ms="1959" started-at="2020-03-12T15:40:58Z" finished-at="2020-03-12T15:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02_LoginWithEmailAndPasswordEmpty -->
-        <test-method status="PASS" signature="TC_03_LoginWithEmailEmpty()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="TC_03_LoginWithEmailEmpty" duration-ms="702" started-at="2020-03-11T15:32:18Z" finished-at="2020-03-11T15:32:18Z">
+        <test-method status="PASS" signature="TC_03_LoginWithEmailEmpty()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="TC_03_LoginWithEmailEmpty" duration-ms="702" started-at="2020-03-12T15:41:00Z" finished-at="2020-03-12T15:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03_LoginWithEmailEmpty -->
-        <test-method status="PASS" signature="TC_04_LoginWithWrongEmailFormat()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="TC_04_LoginWithWrongEmailFormat" duration-ms="600" started-at="2020-03-11T15:32:18Z" finished-at="2020-03-11T15:32:19Z">
+        <test-method status="PASS" signature="TC_04_LoginWithWrongEmailFormat()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="TC_04_LoginWithWrongEmailFormat" duration-ms="686" started-at="2020-03-12T15:41:01Z" finished-at="2020-03-12T15:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04_LoginWithWrongEmailFormat -->
-        <test-method status="PASS" signature="TC_06_LoginWithValidEmailAndPassword()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="TC_06_LoginWithValidEmailAndPassword" duration-ms="1334" started-at="2020-03-11T15:32:19Z" finished-at="2020-03-11T15:32:20Z">
+        <test-method status="PASS" signature="TC_05_LoginWithValidEmailAndPassword()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="TC_05_LoginWithValidEmailAndPassword" duration-ms="1937" started-at="2020-03-12T15:41:01Z" finished-at="2020-03-12T15:41:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_06_LoginWithValidEmailAndPassword -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@5cc7c2a6]" name="afterClass" is-config="true" duration-ms="1228" started-at="2020-03-11T15:32:20Z" finished-at="2020-03-11T15:32:22Z">
+        </test-method> <!-- TC_05_LoginWithValidEmailAndPassword -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_03_Page_Object_Pattern@4590c9c3]" name="afterClass" is-config="true" duration-ms="1227" started-at="2020-03-12T15:41:03Z" finished-at="2020-03-12T15:41:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.payment.Level_03_Page_Object_Pattern -->
+      <class name="com.nopcommerce.payment.Level_04_Selenium_Page_Factory">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="beforeClass" is-config="true" duration-ms="6532" started-at="2020-03-12T15:41:05Z" finished-at="2020-03-12T15:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="TC_01_Register" duration-ms="7017" started-at="2020-03-12T15:41:11Z" finished-at="2020-03-12T15:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register -->
+        <test-method status="PASS" signature="TC_02_LoginWithEmailAndPasswordEmpty()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="TC_02_LoginWithEmailAndPasswordEmpty" duration-ms="2059" started-at="2020-03-12T15:41:18Z" finished-at="2020-03-12T15:41:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_LoginWithEmailAndPasswordEmpty -->
+        <test-method status="PASS" signature="TC_03_LoginWithEmailEmpty()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="TC_03_LoginWithEmailEmpty" duration-ms="648" started-at="2020-03-12T15:41:20Z" finished-at="2020-03-12T15:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_LoginWithEmailEmpty -->
+        <test-method status="PASS" signature="TC_04_LoginWithWrongEmailFormat()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="TC_04_LoginWithWrongEmailFormat" duration-ms="686" started-at="2020-03-12T15:41:21Z" finished-at="2020-03-12T15:41:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_LoginWithWrongEmailFormat -->
+        <test-method status="PASS" signature="TC_05_LoginWithValidEmailAndPassword()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="TC_05_LoginWithValidEmailAndPassword" duration-ms="2091" started-at="2020-03-12T15:41:21Z" finished-at="2020-03-12T15:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_LoginWithValidEmailAndPassword -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_04_Selenium_Page_Factory@32e6e9c3]" name="afterClass" is-config="true" duration-ms="1134" started-at="2020-03-12T15:41:24Z" finished-at="2020-03-12T15:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.payment.Level_04_Selenium_Page_Factory -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- Nop Commerce -->
 </testng-results>
