@@ -3,11 +3,15 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
+import commons.PageGeneratorManager;
 import pageUIs.RegisterPageUI;
 
 public class RegisterPageObject extends AbstractPageObject{
+	
+	WebDriver driver;
 	public RegisterPageObject(WebDriver driverLocal) {
 		super(driverLocal);
+		driver = driverLocal;
 	}
 
 	public void clickToMaleRadioButton() {
@@ -56,8 +60,10 @@ public class RegisterPageObject extends AbstractPageObject{
 		return getTextElement(RegisterPageUI.SUCCESSFUL_REGISTER_TEXT);
 	}
 	
-	public void clickLogoutLink() {
+	public HomePageObject clickLogoutLink() {
 		waitToElementVisible(RegisterPageUI.LOGOUT_LINK);
-		clickToElement(RegisterPageUI.LOGOUT_LINK);		
+		clickToElement(RegisterPageUI.LOGOUT_LINK);	
+	//	return new HomePageObject(driver);
+		return PageGeneratorManager.getHomePage(driver);
 	}
 }

@@ -38,15 +38,16 @@ public class Level_04_Selenium_Page_Factory {
 		
 		email = "tien_nguyen" + randomNumber() + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
 		driver.get("https://demo.nopcommerce.com/");
+		System.out.println("Open URL - Navigate to Home Page");
 		homePage = new HomePageFactory(driver);
 	}
 
 	@Test
 	public void TC_01_Register() {
-		//TDD: Test Driven Development
+		//TDD: Test Driven Development	
 		System.out.println("TC-01");
+		
 		
 		System.out.println("Home Page - Click the Register link");
 		homePage.clickToRegisterLink();
@@ -126,7 +127,6 @@ public class Level_04_Selenium_Page_Factory {
 		loginPage.clickLoginButton();
 		assertTrue(loginPage.isWrongEmailMessageDisplayed());
 	}
-	
 	
 //	public void TC_05_LoginWithPasswordEmpty() {
 //		System.out.println("Register Page - Enter Email and Password empty");

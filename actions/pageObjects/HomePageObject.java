@@ -3,22 +3,27 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
+import commons.PageGeneratorManager;
 import pageUIs.HomePageUI;
 
 public class HomePageObject extends AbstractPageObject {
 
+	WebDriver driverGlobal;
 	public HomePageObject(WebDriver driverLocal) {
 		super(driverLocal);
+		driverGlobal = driverLocal;
 	}
 
-	public void clickToRegisterLink() {
+	public RegisterPageObject clickToRegisterLink() {
 		waitToElementVisible(HomePageUI.REGISTER_LINK);
 		clickToElement(HomePageUI.REGISTER_LINK);
+		return PageGeneratorManager.getRegisterPage(driverGlobal);
 	}
 
-	public void clickToLoginLink() {
+	public LoginPageObject clickToLoginLink() {
 		waitToElementVisible(HomePageUI.LOGIN_LINK);
 		clickToElement(HomePageUI.LOGIN_LINK);
+		return PageGeneratorManager.getLoginPage(driverGlobal);
 	}
 
 	public boolean isMyAccountLinkDisplayed() {

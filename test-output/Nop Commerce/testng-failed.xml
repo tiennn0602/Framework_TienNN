@@ -4,6 +4,7 @@
   <test name="Run on Firefox">
     <classes>
       <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern"/>
+      <class name="com.nopcommerce.payment.Level_05_Page_Generator_Manager"/>
     </classes>
   </test> <!-- Run on Firefox -->
 </suite> <!-- Failed suite [Nop Commerce] -->
