@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Nop_Commerce">
-              <span class="suite-name border-passed">Nop Commerce</span>
+              <span class="suite-name border-failed">Nop Commerce</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Nop_Commerce" class="hide-methods failed suite-Nop_Commerce"> (hide)</a> <!-- hide-methods failed suite-Nop_Commerce -->
+                      <a href="#" panel-name="suite-Nop_Commerce" class="show-methods failed suite-Nop_Commerce"> (show)</a> <!-- show-methods failed suite-Nop_Commerce -->
+                    </span>
+                    <div class="method-list-content failed suite-Nop_Commerce">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern" hash-for-method="TC_05_LoginWithValidEmailAndPassword">TC_05_LoginWithValidEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Nop_Commerce -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,52 +121,17 @@
                     <div class="method-list-content passed suite-Nop_Commerce">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_03_Page_Object_Pattern" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern" hash-for-method="TC_02_LoginWithEmailAndPasswordEmpty">TC_02_LoginWithEmailAndPasswordEmpty</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_05_Page_Generator_Manager" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern" hash-for-method="TC_03_LoginWithEmailEmpty">TC_03_LoginWithEmailEmpty</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_03_Page_Object_Pattern" hash-for-method="TC_02_LoginWithEmailAndPasswordEmpty">TC_02_LoginWithEmailAndPasswordEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_05_Page_Generator_Manager" hash-for-method="TC_02_LoginWithEmailAndPasswordEmpty">TC_02_LoginWithEmailAndPasswordEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_05_Page_Generator_Manager" hash-for-method="TC_03_LoginWithEmailEmpty">TC_03_LoginWithEmailEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_03_Page_Object_Pattern" hash-for-method="TC_03_LoginWithEmailEmpty">TC_03_LoginWithEmailEmpty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_03_Page_Object_Pattern" hash-for-method="TC_04_LoginWithWrongEmailFormat">TC_04_LoginWithWrongEmailFormat</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_05_Page_Generator_Manager" hash-for-method="TC_04_LoginWithWrongEmailFormat">TC_04_LoginWithWrongEmailFormat</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_03_Page_Object_Pattern" hash-for-method="TC_05_LoginWithValidEmailAndPassword">TC_05_LoginWithValidEmailAndPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_05_Page_Generator_Manager" hash-for-method="TC_05_LoginWithValidEmailAndPassword">TC_05_LoginWithValidEmailAndPassword</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern" hash-for-method="TC_04_LoginWithWrongEmailFormat">TC_04_LoginWithWrongEmailFormat</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Nop_Commerce -->
@@ -162,10 +146,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Nop_Commerce" class="panel Nop_Commerce">
-          <div class="suite-Nop_Commerce-class-passed">
+          <div class="suite-Nop_Commerce-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.payment.Level_05_Page_Generator_Manager</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -173,27 +157,37 @@
                   <a name="TC_01_Register">
                   </a> <!-- TC_01_Register -->
                   <span class="method-name">TC_01_Register</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_02_LoginWithEmailAndPasswordEmpty">
-                  </a> <!-- TC_02_LoginWithEmailAndPasswordEmpty -->
-                  <span class="method-name">TC_02_LoginWithEmailAndPasswordEmpty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_03_LoginWithEmailEmpty">
-                  </a> <!-- TC_03_LoginWithEmailEmpty -->
-                  <span class="method-name">TC_03_LoginWithEmailEmpty</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_04_LoginWithWrongEmailFormat">
-                  </a> <!-- TC_04_LoginWithWrongEmailFormat -->
-                  <span class="method-name">TC_04_LoginWithWrongEmailFormat</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;result&apos;and text() = &apos;Your registration completed&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPageObject.waitToElementVisible(AbstractPageObject.java:243)
+	at pageObjects.RegisterPageObject.isSuccessfulMessageDisplayed(RegisterPageObject.java:54)
+	at com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern.TC_01_Register(Level_06_Multiple_Browser_Paralell_Factory_Pattern.java:138)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;result&apos;and text() = &apos;Your registration completed&apos;]&quot;}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-2G9S8JA&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d95e1d0706928c7d51b588905b5c60b
+*** Element info: {Using=xpath, value=//div[@class=&apos;result&apos;and text() = &apos;Your registration completed&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -201,23 +195,39 @@
                   <a name="TC_05_LoginWithValidEmailAndPassword">
                   </a> <!-- TC_05_LoginWithValidEmailAndPassword -->
                   <span class="method-name">TC_05_LoginWithValidEmailAndPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ico-account&apos; and text() = &apos;My account&apos;]&quot;}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-2G9S8JA&apos;, ip: &apos;192.168.1.21&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6d95e1d0706928c7d51b588905b5c60b
+*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos; and text() = &apos;My account&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at commons.AbstractPageObject.isElementDisplayed(AbstractPageObject.java:167)
+	at com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern.TC_05_LoginWithValidEmailAndPassword(Level_06_Multiple_Browser_Paralell_Factory_Pattern.java:205)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Nop_Commerce-class-passed -->
+          </div> <!-- suite-Nop_Commerce-class-failed -->
           <div class="suite-Nop_Commerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.payment.Level_03_Page_Object_Pattern</span>
+              <span class="class-name">com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_01_Register">
-                  </a> <!-- TC_01_Register -->
-                  <span class="method-name">TC_01_Register</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC_02_LoginWithEmailAndPasswordEmpty">
@@ -237,13 +247,6 @@
                   <a name="TC_04_LoginWithWrongEmailFormat">
                   </a> <!-- TC_04_LoginWithWrongEmailFormat -->
                   <span class="method-name">TC_04_LoginWithWrongEmailFormat</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_05_LoginWithValidEmailAndPassword">
-                  </a> <!-- TC_05_LoginWithValidEmailAndPassword -->
-                  <span class="method-name">TC_05_LoginWithValidEmailAndPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,12 +261,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Nop Commerce&quot;&gt;
-  &lt;test name=&quot;Run on Firefox&quot;&gt;
+  &lt;test name=&quot;Run on CHROME UI &quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome_ui&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.payment.Level_03_Page_Object_Pattern&quot;/&gt;
-      &lt;class name=&quot;com.nopcommerce.payment.Level_05_Page_Generator_Manager&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on Firefox --&gt;
+  &lt;/test&gt; &lt;!-- Run on CHROME UI  --&gt;
 &lt;/suite&gt; &lt;!-- Nop Commerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -275,7 +278,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on Firefox (2 classes)</span>
+                <span class="test-name">Run on CHROME UI  (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,52 +304,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_01_Register')
-data.setCell(0, 2, 'com.nopcommerce.payment.Level_05_Page_Generator_Manager')
-data.setCell(0, 3, 6117);
+data.setCell(0, 2, 'com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern')
+data.setCell(0, 3, 32544);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_01_Register')
-data.setCell(1, 2, 'com.nopcommerce.payment.Level_03_Page_Object_Pattern')
-data.setCell(1, 3, 5408);
+data.setCell(1, 1, 'TC_05_LoginWithValidEmailAndPassword')
+data.setCell(1, 2, 'com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern')
+data.setCell(1, 3, 31728);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_05_LoginWithValidEmailAndPassword')
-data.setCell(2, 2, 'com.nopcommerce.payment.Level_05_Page_Generator_Manager')
-data.setCell(2, 3, 1939);
+data.setCell(2, 1, 'TC_02_LoginWithEmailAndPasswordEmpty')
+data.setCell(2, 2, 'com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern')
+data.setCell(2, 3, 968);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_05_LoginWithValidEmailAndPassword')
-data.setCell(3, 2, 'com.nopcommerce.payment.Level_03_Page_Object_Pattern')
-data.setCell(3, 3, 1926);
+data.setCell(3, 1, 'TC_03_LoginWithEmailEmpty')
+data.setCell(3, 2, 'com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern')
+data.setCell(3, 3, 263);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_02_LoginWithEmailAndPasswordEmpty')
-data.setCell(4, 2, 'com.nopcommerce.payment.Level_05_Page_Generator_Manager')
-data.setCell(4, 3, 1700);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_02_LoginWithEmailAndPasswordEmpty')
-data.setCell(5, 2, 'com.nopcommerce.payment.Level_03_Page_Object_Pattern')
-data.setCell(5, 3, 1638);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_04_LoginWithWrongEmailFormat')
-data.setCell(6, 2, 'com.nopcommerce.payment.Level_03_Page_Object_Pattern')
-data.setCell(6, 3, 402);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_03_LoginWithEmailEmpty')
-data.setCell(7, 2, 'com.nopcommerce.payment.Level_03_Page_Object_Pattern')
-data.setCell(7, 3, 400);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_03_LoginWithEmailEmpty')
-data.setCell(8, 2, 'com.nopcommerce.payment.Level_05_Page_Generator_Manager')
-data.setCell(8, 3, 385);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_04_LoginWithWrongEmailFormat')
-data.setCell(9, 2, 'com.nopcommerce.payment.Level_05_Page_Generator_Manager')
-data.setCell(9, 3, 383);
+data.setCell(4, 1, 'TC_04_LoginWithWrongEmailFormat')
+data.setCell(4, 2, 'com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern')
+data.setCell(4, 3, 260);
 window.suiteTableData['Nop_Commerce']= { tableData: data, tableDiv: 'times-div-Nop_Commerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Nop_Commerce">
               </div> <!-- times-div-Nop_Commerce -->
             </div> <!-- times-div -->
@@ -372,65 +355,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.payment.Level_03_Page_Object_Pattern</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
+                <span class="method-name">beforeClass(chrome_ui)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_01_Register</span>
-                <span class="method-start">6453 ms</span>
+                <span class="method-start">7836 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_02_LoginWithEmailAndPasswordEmpty</span>
-                <span class="method-start">11862 ms</span>
+                <span class="method-start">40382 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_03_LoginWithEmailEmpty</span>
-                <span class="method-start">13501 ms</span>
+                <span class="method-start">41351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_04_LoginWithWrongEmailFormat</span>
-                <span class="method-start">13901 ms</span>
+                <span class="method-start">41614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_05_LoginWithValidEmailAndPassword</span>
-                <span class="method-start">14304 ms</span>
+                <span class="method-start">41875 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">16231 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.payment.Level_05_Page_Generator_Manager</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">16945 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">TC_01_Register</span>
-                <span class="method-start">21665 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_02_LoginWithEmailAndPasswordEmpty</span>
-                <span class="method-start">27783 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_03_LoginWithEmailEmpty</span>
-                <span class="method-start">29484 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_04_LoginWithWrongEmailFormat</span>
-                <span class="method-start">29870 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_05_LoginWithValidEmailAndPassword</span>
-                <span class="method-start">30254 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">32193 ms</span>
+                <span class="method-start">73605 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

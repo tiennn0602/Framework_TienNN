@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Nop Commerce]">
-  <test name="Run on Firefox">
+  <parameter name="browser" value="chrome_ui"/>
+  <test name="Run on CHROME UI ">
+    <parameter name="browser" value="chrome_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern"/>
-      <class name="com.nopcommerce.payment.Level_05_Page_Generator_Manager"/>
+      <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern"/>
     </classes>
-  </test> <!-- Run on Firefox -->
+  </test> <!-- Run on CHROME UI  -->
+  <test name="Run on CHROME UI (failed)">
+    <parameter name="browser" value="chrome_ui"/>
+    <classes>
+      <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern">
+        <methods>
+          <include name="TC_05_LoginWithValidEmailAndPassword"/>
+          <include name="TC_01_Register"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern -->
+    </classes>
+  </test> <!-- Run on CHROME UI (failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->

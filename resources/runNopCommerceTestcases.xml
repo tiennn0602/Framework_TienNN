@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Nop Commerce" parallel="false">
-  <test name="Run on Firefox">
+<!-- <suite name="Nop Commerce" parallel="tests" thread-count = "4"> -->
+
+<!--   <test name="Run on Firefox UI"> -->
+<!--   <parameter name = "browser" value = "firefox_ui"/> -->
+<!--     <classes> -->
+<!--       <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+  
+<!--     <test name="Run on Firefox HEADLESS"> -->
+<!--     <parameter name = "browser" value = "firefox_headless"/> -->
+<!--     <classes> -->
+<!--       <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+  
+    <test name="Run on CHROME UI ">
+    <parameter name = "browser" value = "chrome_ui"/>
     <classes>
-<!--       <class name="com.nopcommerce.payment.Level_02_AbstractPage_01_Init"/> -->
-      <class name="com.nopcommerce.payment.Level_03_Page_Object_Pattern"/>
-      <class name="com.nopcommerce.payment.Level_05_Page_Generator_Manager"/>
+      <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+  
+<!--     <test name="Run on CHROME HEADLESS"> -->
+<!--     <parameter name = "browser" value = "chrome_headless"/> -->
+<!--     <classes> -->
+<!--       <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
+  
+</suite> 
