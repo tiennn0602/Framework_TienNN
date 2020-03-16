@@ -36,7 +36,7 @@ public class RegisterPageFactory extends AbstractPageFactory {
 	@FindBy (how = How.CSS, using = "#register-button")		//# for button
 	private WebElement registerButton;
 	
-	@FindBy (how = How.XPATH, using = "//div[@class='result'and text() = 'Your registration completed']")
+	@FindBy (how = How.XPATH, using = "//div[@class='result'and text()='Your registration completed']")
 	private WebElement successfulRegisterMessage;
 	
 	@FindBy (how = How.CSS, using = ".result")		//. for class

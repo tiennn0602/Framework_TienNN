@@ -203,7 +203,7 @@ public class AbstractPageObject {
 		Set<String> allWindows = driverGlobal.getWindowHandles();
 		for (String runWindows : allWindows) {
 			if (!runWindows.equals(parentWindow)) {
-				driverGlobal.switchTo().window(runWindows)
+				driverGlobal.switchTo().window(runWindows);
 				driverGlobal.close();
 			}
 		}

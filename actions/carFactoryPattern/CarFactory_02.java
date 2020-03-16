@@ -1,7 +1,6 @@
 package carFactoryPattern;
 
-public class CarFactory_02 {
+public abstract class CarFactory_02 {
 	
-	public void viewCarVersion(String carName) {
-	}
+	public abstract void viewCarVersion();
 }
