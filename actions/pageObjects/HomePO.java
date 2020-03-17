@@ -37,9 +37,8 @@ public class HomePO extends AbstractPageObject {
 	}
 
 	public HeaderMyAccountPO openHeaderMyAccountPage(WebDriver driver) {
-		waitToElementVisible(HomePageUI.LOGOUT_LINK);
-		clickToElement(HomePageUI.LOGIN_LINK);
+		waitToElementVisible(HomePageUI.HEADER_MY_ACCOUNT_LINK);
+		clickToElement(HomePageUI.HEADER_MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getHeaderMyAccountPage(driver);
 	}
-
 }
