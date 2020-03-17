@@ -6,10 +6,10 @@ import commons.AbstractPageObject;
 import commons.PageGeneratorManager;
 import pageUIs.LoginPageUI;
 
-public class LoginPageObject extends AbstractPageObject {
+public class LoginPO extends AbstractPageObject {
 
 	WebDriver driver;
-	public LoginPageObject(WebDriver driverLocal) {
+	public LoginPO(WebDriver driverLocal) {
 		super(driverLocal);
 		driver = driverLocal;
 	}
@@ -24,7 +24,7 @@ public class LoginPageObject extends AbstractPageObject {
 		sendKeytoElement(LoginPageUI.PASSWORD_TEXTBOX, "123456");
 	}
 
-	public HomePageObject clickLoginButton() {
+	public HomePO clickLoginButton() {
 		waitToElementVisible(LoginPageUI.LOGIN_BUTTON);
 		clickToElement(LoginPageUI.LOGIN_BUTTON);
 		return PageGeneratorManager.getHomePage(driver);

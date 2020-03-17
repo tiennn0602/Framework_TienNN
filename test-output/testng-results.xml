@@ -1,13 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="5" passed="3">
+<testng-results skipped="0" failed="2" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Nop Commerce" duration-ms="74311" started-at="2020-03-15T08:21:09Z" finished-at="2020-03-15T08:22:23Z">
+  <suite name="Nop Commerce" duration-ms="112385" started-at="2020-03-17T03:19:27Z" finished-at="2020-03-17T03:21:19Z">
     <groups>
     </groups>
-    <test name="Run on CHROME UI " duration-ms="74311" started-at="2020-03-15T08:21:09Z" finished-at="2020-03-15T08:22:23Z">
-      <class name="com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="beforeClass" is-config="true" duration-ms="7831" started-at="2020-03-15T15:21:09Z" finished-at="2020-03-15T15:21:17Z">
+    <test name="Run on Firefox UI" duration-ms="16096" started-at="2020-03-17T03:19:27Z" finished-at="2020-03-17T03:19:43Z">
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@6574b225]" name="beforeClass" is-config="true" duration-ms="5734" started-at="2020-03-17T10:19:27Z" finished-at="2020-03-17T10:19:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox_ui]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@6574b225]" name="TC_01_Register" duration-ms="6010" started-at="2020-03-17T10:19:32Z" finished-at="2020-03-17T10:19:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register -->
+        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@6574b225]" name="TC_02_Login" duration-ms="3257" started-at="2020-03-17T10:19:38Z" finished-at="2020-03-17T10:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@6574b225]" name="afterClass" is-config="true" duration-ms="1084" started-at="2020-03-17T10:19:42Z" finished-at="2020-03-17T10:19:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain -->
+    </test> <!-- Run on Firefox UI -->
+    <test name="Run on Firefox HEADLESS" duration-ms="16990" started-at="2020-03-17T03:19:43Z" finished-at="2020-03-17T03:20:00Z">
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@5dfcfece]" name="beforeClass" is-config="true" duration-ms="7706" started-at="2020-03-17T10:19:43Z" finished-at="2020-03-17T10:19:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox_headless]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@5dfcfece]" name="TC_01_Register" duration-ms="5602" started-at="2020-03-17T10:19:50Z" finished-at="2020-03-17T10:19:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register -->
+        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@5dfcfece]" name="TC_02_Login" duration-ms="2620" started-at="2020-03-17T10:19:56Z" finished-at="2020-03-17T10:19:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@5dfcfece]" name="afterClass" is-config="true" duration-ms="1057" started-at="2020-03-17T10:19:59Z" finished-at="2020-03-17T10:20:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain -->
+    </test> <!-- Run on Firefox HEADLESS -->
+    <test name="Run on CHROME UI " duration-ms="67306" started-at="2020-03-17T03:20:00Z" finished-at="2020-03-17T03:21:07Z">
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@643b1d11]" name="beforeClass" is-config="true" duration-ms="3182" started-at="2020-03-17T10:20:00Z" finished-at="2020-03-17T10:20:03Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +72,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="TC_01_Register" duration-ms="32544" started-at="2020-03-15T15:21:17Z" finished-at="2020-03-15T15:21:49Z">
+        <test-method status="FAIL" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@643b1d11]" name="TC_01_Register" duration-ms="31600" started-at="2020-03-17T10:20:03Z" finished-at="2020-03-17T10:20:34Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='result'and text() = 'Your registration completed'] (tried for 30 second(s) with 500 milliseconds interval)]]>
@@ -29,7 +83,7 @@
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at commons.AbstractPageObject.waitToElementVisible(AbstractPageObject.java:243)
 	at pageObjects.RegisterPageObject.isSuccessfulMessageDisplayed(RegisterPageObject.java:54)
-	at com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern.TC_01_Register(Level_06_Multiple_Browser_Paralell_Factory_Pattern.java:138)
+	at com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain.TC_01_Register(Level_08_WebDriverLifeCycle_ActionChain.java:93)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,17 +105,17 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='result'and text() = 'Your registration completed']"}
-  (Session info: chrome=78.0.3904.70)
+  (Session info: chrome=80.0.3987.132)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-2G9S8JA', ip: '192.168.1.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+System info: host: 'VNDEV21', ip: '192.168.20.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6d95e1d0706928c7d51b588905b5c60b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\TIEN~1.NGU\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:54705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9a9150a8f870fbcc769214623b5ee661
 *** Element info: {Using=xpath, value=//div[@class='result'and text() = 'Your registration completed']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -87,57 +141,18 @@ Session ID: 6d95e1d0706928c7d51b588905b5c60b
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Register -->
-        <test-method status="PASS" signature="TC_02_LoginWithEmailAndPasswordEmpty()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="TC_02_LoginWithEmailAndPasswordEmpty" duration-ms="968" started-at="2020-03-15T15:21:49Z" finished-at="2020-03-15T15:21:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_LoginWithEmailAndPasswordEmpty -->
-        <test-method status="PASS" signature="TC_03_LoginWithEmailEmpty()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="TC_03_LoginWithEmailEmpty" duration-ms="263" started-at="2020-03-15T15:21:50Z" finished-at="2020-03-15T15:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_LoginWithEmailEmpty -->
-        <test-method status="PASS" signature="TC_04_LoginWithWrongEmailFormat()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="TC_04_LoginWithWrongEmailFormat" duration-ms="260" started-at="2020-03-15T15:21:51Z" finished-at="2020-03-15T15:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_LoginWithWrongEmailFormat -->
-        <test-method status="FAIL" signature="TC_05_LoginWithValidEmailAndPassword()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="TC_05_LoginWithValidEmailAndPassword" duration-ms="31728" started-at="2020-03-15T15:21:51Z" finished-at="2020-03-15T15:22:22Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@643b1d11]" name="TC_02_Login" duration-ms="31765" started-at="2020-03-17T10:20:34Z" finished-at="2020-03-17T10:21:06Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-account' and text() = 'My account']"}
-  (Session info: chrome=78.0.3904.70)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-2G9S8JA', ip: '192.168.1.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6d95e1d0706928c7d51b588905b5c60b
-*** Element info: {Using=xpath, value=//a[@class='ico-account' and text() = 'My account']}]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class='ico-account' and text() = 'My account'] (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-account' and text() = 'My account']"}
-  (Session info: chrome=78.0.3904.70)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-2G9S8JA', ip: '192.168.1.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 6d95e1d0706928c7d51b588905b5c60b
-*** Element info: {Using=xpath, value=//a[@class='ico-account' and text() = 'My account']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at commons.AbstractPageObject.isElementDisplayed(AbstractPageObject.java:167)
-	at com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern.TC_05_LoginWithValidEmailAndPassword(Level_06_Multiple_Browser_Paralell_Factory_Pattern.java:205)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class='ico-account' and text() = 'My account'] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.AbstractPageObject.waitToElementVisible(AbstractPageObject.java:243)
+	at pageObjects.HomePageObject.isMyAccountLinkDisplayed(HomePageObject.java:30)
+	at com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain.TC_02_Login(Level_08_WebDriverLifeCycle_ActionChain.java:111)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -159,20 +174,74 @@ Session ID: 6d95e1d0706928c7d51b588905b5c60b
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='ico-account' and text() = 'My account']"}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'VNDEV21', ip: '192.168.20.71', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\TIEN~1.NGU\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:54705}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9a9150a8f870fbcc769214623b5ee661
+*** Element info: {Using=xpath, value=//a[@class='ico-account' and text() = 'My account']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 27 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_LoginWithValidEmailAndPassword -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern@50675690]" name="afterClass" is-config="true" duration-ms="699" started-at="2020-03-15T15:22:22Z" finished-at="2020-03-15T15:22:23Z">
+        </test-method> <!-- TC_02_Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@643b1d11]" name="afterClass" is-config="true" duration-ms="752" started-at="2020-03-17T10:21:06Z" finished-at="2020-03-17T10:21:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.payment.Level_06_Multiple_Browser_Paralell_Factory_Pattern -->
+      </class> <!-- com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain -->
     </test> <!-- Run on CHROME UI  -->
+    <test name="Run on CHROME HEADLESS" duration-ms="11956" started-at="2020-03-17T03:21:07Z" finished-at="2020-03-17T03:21:19Z">
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain">
+        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@51081592]" name="beforeClass" is-config="true" duration-ms="3924" started-at="2020-03-17T10:21:07Z" finished-at="2020-03-17T10:21:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome_headless]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="TC_01_Register()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@51081592]" name="TC_01_Register" duration-ms="4750" started-at="2020-03-17T10:21:11Z" finished-at="2020-03-17T10:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Register -->
+        <test-method status="PASS" signature="TC_02_Login()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@51081592]" name="TC_02_Login" duration-ms="2561" started-at="2020-03-17T10:21:16Z" finished-at="2020-03-17T10:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain@51081592]" name="afterClass" is-config="true" duration-ms="718" started-at="2020-03-17T10:21:18Z" finished-at="2020-03-17T10:21:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain -->
+    </test> <!-- Run on CHROME HEADLESS -->
   </suite> <!-- Nop Commerce -->
 </testng-results>

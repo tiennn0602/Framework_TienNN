@@ -6,10 +6,10 @@ import commons.AbstractPageObject;
 import commons.PageGeneratorManager;
 import pageUIs.RegisterPageUI;
 
-public class RegisterPageObject extends AbstractPageObject{
+public class RegisterPO extends AbstractPageObject{
 	
 	WebDriver driver;
-	public RegisterPageObject(WebDriver driverLocal) {
+	public RegisterPO(WebDriver driverLocal) {
 		super(driverLocal);
 		driver = driverLocal;
 	}
@@ -60,7 +60,7 @@ public class RegisterPageObject extends AbstractPageObject{
 		return getTextElement(RegisterPageUI.SUCCESSFUL_REGISTER_TEXT);
 	}
 	
-	public HomePageObject clickLogoutLink() {
+	public HomePO clickLogoutLink() {
 		waitToElementVisible(RegisterPageUI.LOGOUT_LINK);
 		clickToElement(RegisterPageUI.LOGOUT_LINK);	
 	//	return new HomePageObject(driver);

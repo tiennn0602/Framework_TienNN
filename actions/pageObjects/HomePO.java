@@ -6,34 +6,40 @@ import commons.AbstractPageObject;
 import commons.PageGeneratorManager;
 import pageUIs.HomePageUI;
 
-public class HomePageObject extends AbstractPageObject {
+public class HomePO extends AbstractPageObject {
 
 	WebDriver driverGlobal;
-	public HomePageObject(WebDriver driverLocal) {
+	public HomePO(WebDriver driverLocal) {
 		super(driverLocal);
 		driverGlobal = driverLocal;
 	}
 
-	public RegisterPageObject clickToRegisterLink() {
+	public RegisterPO clickToRegisterLink() {
 		waitToElementVisible(HomePageUI.REGISTER_LINK);
 		clickToElement(HomePageUI.REGISTER_LINK);
 		return PageGeneratorManager.getRegisterPage(driverGlobal);
 	}
 
-	public LoginPageObject clickToLoginLink() {
+	public LoginPO clickToLoginLink() {
 		waitToElementVisible(HomePageUI.LOGIN_LINK);
 		clickToElement(HomePageUI.LOGIN_LINK);
 		return PageGeneratorManager.getLoginPage(driverGlobal);
 	}
 
 	public boolean isMyAccountLinkDisplayed() {
-		waitToElementVisible(HomePageUI.MY_ACCOUNT_LINK);
-		return isElementDisplayed(HomePageUI.MY_ACCOUNT_LINK);
+		waitToElementVisible(HomePageUI.HEADER_MY_ACCOUNT_LINK);
+		return isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK);
 	}
 
 	public boolean isLogoutLinkDisplayed() {
 		waitToElementVisible(HomePageUI.LOGOUT_LINK);
 		return isElementDisplayed(HomePageUI.LOGOUT_LINK);
+	}
+
+	public HeaderMyAccountPO openHeaderMyAccountPage(WebDriver driver) {
+		waitToElementVisible(HomePageUI.LOGOUT_LINK);
+		clickToElement(HomePageUI.LOGIN_LINK);
+		return PageGeneratorManager.getHeaderMyAccountPage(driver);
 	}
 
 }

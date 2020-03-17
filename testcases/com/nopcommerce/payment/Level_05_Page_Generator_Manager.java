@@ -14,9 +14,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import commons.PageGeneratorManager;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.HomePO;
+import pageObjects.LoginPO;
+import pageObjects.RegisterPO;
 import pageUIs.HomePageUI;
 
 public class Level_05_Page_Generator_Manager {
@@ -24,9 +24,9 @@ public class Level_05_Page_Generator_Manager {
 	WebDriver driver;
 	Select select;
 	String email;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private HomePO homePage;
+	private RegisterPO registerPage;
+	private LoginPO loginPage;
 	
 	@BeforeClass
  	public void beforeClass() {
@@ -145,7 +145,7 @@ public class Level_05_Page_Generator_Manager {
 		homePage = loginPage.clickLoginButton();
 		//homePage = new HomePageObject(driver);
 		//moved to LoginPageObject
-		assertTrue(homePage.isElementDisplayed(HomePageUI.MY_ACCOUNT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
 		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
 	}
 

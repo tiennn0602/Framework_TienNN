@@ -19,9 +19,9 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.PageGeneratorManager;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.HomePO;
+import pageObjects.LoginPO;
+import pageObjects.RegisterPO;
 import pageUIs.HomePageUI;
 
 public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends AbstractTest {
@@ -29,9 +29,9 @@ public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends Abstr
 	private WebDriver driver;
 	Select select;
 	String email;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private HomePO homePage;
+	private RegisterPO registerPage;
+	private LoginPO loginPage;
 	
 	@Parameters("browser") //apply for before class
 	@BeforeClass
@@ -202,7 +202,7 @@ public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends Abstr
 		homePage = loginPage.clickLoginButton();
 		//homePage = new HomePageObject(driver);
 		//moved to LoginPageObject
-		assertTrue(homePage.isElementDisplayed(HomePageUI.MY_ACCOUNT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
 		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
 	}
 

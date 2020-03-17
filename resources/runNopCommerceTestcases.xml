@@ -5,28 +5,28 @@
   <test name="Run on Firefox UI">
   <parameter name = "browser" value = "firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02"/>
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/>
     </classes>
   </test> 
   
-    <test name="Run on Firefox HEADLESS">
-    <parameter name = "browser" value = "firefox_headless"/>
-    <classes>
-      <class name="com.nopcommerce.payment.Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02"/>
-    </classes>
-  </test> 
+<!--     <test name="Run on Firefox HEADLESS"> -->
+<!--     <parameter name = "browser" value = "firefox_headless"/> -->
+<!--     <classes> -->
+<!--       <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/> -->
+<!--     </classes> -->
+<!--   </test>  -->
   
 <!--     <test name="Run on CHROME UI "> -->
 <!--     <parameter name = "browser" value = "chrome_ui"/> -->
 <!--     <classes> -->
-<!--       <class name="com.nopcommerce.payment.Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02"/> -->
+<!--       <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
   
 <!--     <test name="Run on CHROME HEADLESS"> -->
 <!--     <parameter name = "browser" value = "chrome_headless"/> -->
 <!--     <classes> -->
-<!--       <class name="com.nopcommerce.payment.Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02"/> -->
+<!--       <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/> -->
 <!--     </classes> -->
 <!--   </test>  -->
   

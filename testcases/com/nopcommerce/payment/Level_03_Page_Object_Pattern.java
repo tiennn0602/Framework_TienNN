@@ -13,9 +13,9 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.HomePO;
+import pageObjects.LoginPO;
+import pageObjects.RegisterPO;
 import pageUIs.HomePageUI;
 
 public class Level_03_Page_Object_Pattern {
@@ -23,9 +23,9 @@ public class Level_03_Page_Object_Pattern {
 	WebDriver driver;
 	Select select;
 	String email;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private HomePO homePage;
+	private RegisterPO registerPage;
+	private LoginPO loginPage;
 	
 	@BeforeClass
  	public void beforeClass() {
@@ -47,10 +47,10 @@ public class Level_03_Page_Object_Pattern {
 	public void TC_01_Register() {
 		//TDD: Test Driven Development
 		System.out.println("Open URL - Navigate to Home Page");
-		homePage = new HomePageObject(driver);
+		homePage = new HomePO(driver);
 		System.out.println("Home Page - Click the Register link");
 		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new RegisterPO(driver);
 		
 		System.out.println("Register Page - Click on the Gender radio button");
 		registerPage.clickToMaleRadioButton();
@@ -81,14 +81,14 @@ public class Level_03_Page_Object_Pattern {
 		
 		System.out.println("Register Page - Click Logout Link -> navigate to Home Page");
 		registerPage.clickLogoutLink();
-		homePage = new HomePageObject(driver);
+		homePage = new HomePO(driver);
 	}
 
 	@Test
 	public void TC_02_LoginWithEmailAndPasswordEmpty() {
 		System.out.println("Home Page - Click the Login link");
 		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = new LoginPO(driver);
 		
 		System.out.println("Register Page - Leave Email empty");
 		loginPage.inputToEmailTextbox("");
@@ -137,8 +137,8 @@ public class Level_03_Page_Object_Pattern {
 		loginPage.inputToEmailTextbox(email);
 		loginPage.inputToPasswordTextbox("123456");
 		loginPage.clickLoginButton();
-		homePage = new HomePageObject(driver);
-		assertTrue(homePage.isElementDisplayed(HomePageUI.MY_ACCOUNT_LINK));
+		homePage = new HomePO(driver);
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
 		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
 	}
 
