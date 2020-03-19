@@ -3,7 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
-import pageUIs.HomePageUI;
+import commons.PageGeneratorManager;
+import pageUIs.SitemapPageUI;
 
 public class SitemapPO extends AbstractPageObject{
 
@@ -11,10 +12,9 @@ public class SitemapPO extends AbstractPageObject{
 		super(driverLocal);
 	}
 
-	public ShippingAndReturnPO openShippingAndReturnPage(WebDriver driver) {
-		waitToElementVisible(HomePageUI.);
-		clickToElement(HomePageUI.FOOTER_SITEMAP_LINK);
-		return null;
-	}
-
+//	public ShippingAndReturnPO openShippingAndReturnPage(WebDriver driver) {
+//		waitToElementVisible(SitemapPageUI.FOOTER_SHIPPING_AND_RETURN_LINK);
+//		clickToElement(SitemapPageUI.FOOTER_SHIPPING_AND_RETURN_LINK);
+//		return PageGeneratorManager.getShippingAndReturnPage(driver);
+//	}
 }

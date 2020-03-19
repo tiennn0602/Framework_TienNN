@@ -7,10 +7,6 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,13 +17,14 @@ import commons.AbstractTest;
 import commons.PageGeneratorManager;
 import driverFactoryPattern.DriverManager;
 import driverFactoryPattern.DriverManagerFactory;
+import pageObjects.FooterMyAccountPO;
 import pageObjects.HeaderMyAccountPO;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
 import pageObjects.RegisterPO;
+import pageObjects.SearchPO;
 import pageObjects.ShippingAndReturnPO;
 import pageObjects.SitemapPO;
-import pageUIs.HomePageUI;
 
 public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 
@@ -39,8 +36,10 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 	private RegisterPO registerPage;
 	private LoginPO loginPage;
 	private HeaderMyAccountPO headerMyAccountPage; 
+	private FooterMyAccountPO footerMyAccountPage;
 	private SitemapPO siteMapPage;
 	private ShippingAndReturnPO shippingAndReturnPage;
+	private SearchPO searchPage;
 	
 	@Parameters("browser") //apply for before class
 	@BeforeClass
@@ -119,18 +118,29 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 	}
 	
 	@Test
-	public void TC_03_ActionChain() {
+	public void TC_03_ActionChain() throws Exception {
 		//HomePage -> Header My Account (Customer Info)
-		headerMyAccountPage = homePage.openHeaderMyAccountPage(driver);
+		headerMyAccountPage = homePage.openHeaderMyAccountPage();
+		Thread.sleep(2000);
+		
+		//Header My Account (Customer Info) => HomePage
+		homePage = headerMyAccountPage.openHomePage();
 		
 		// Header My Account (Customer Info) -> Footer (Sitemap)
-		siteMapPage = headerMyAccountPage.openSiteMapPage(driver);
+		siteMapPage = headerMyAccountPage.openSiteMapPage();
+		Thread.sleep(2000);
 		
-		// Footer (Sitemap) -> Shipping & Returns
-		shippingAndReturnPage = siteMapPage.openShippingAndReturnPage(driver);
+		// Footer (Site map) -> Shipping & Returns
+		shippingAndReturnPage = siteMapPage.openShippingAndReturnPage();
+		Thread.sleep(2000);
+		
 		// Shipping & Returns -> Footer My Account 
+		footerMyAccountPage = shippingAndReturnPage.openFooterMyAccountPage();
+		Thread.sleep(2000);
 		
 		// Footer My Account (Customer Info) -> Search
+		searchPage = footerMyAccountPage.openSearchPage();
+		Thread.sleep(2000);
 	}
 	
 	@AfterClass

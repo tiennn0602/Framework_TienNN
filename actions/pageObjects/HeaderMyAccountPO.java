@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
 import commons.PageGeneratorManager;
-import pageUIs.HomePageUI;
+import pageUIs.HeaderMyAccountPageUI;
 
 // Ke thua AbstractPageObject
 // Khai bao biet driver
@@ -17,10 +17,10 @@ public class HeaderMyAccountPO extends AbstractPageObject {
 		super(driverLocal);
 		driverGlobal = driverLocal;
 	}
-	
-	public SitemapPO openSiteMapPage(WebDriver driver) {
-		waitToElementVisible(HomePageUI.FOOTER_SITEMAP_LINK);
-		clickToElement(HomePageUI.FOOTER_SITEMAP_LINK);
-		return PageGeneratorManager.getSiteMapPage(driver);
-	}
+
+//	public SitemapPO openSiteMapPage(WebDriver driver) {
+//		waitToElementVisible(HeaderMyAccountPageUI.FOOTER_SITEMAP_LINK);
+//		clickToElement(HeaderMyAccountPageUI.FOOTER_SITEMAP_LINK);
+//		return PageGeneratorManager.getSiteMapPage(driver);
+//	}
 }
