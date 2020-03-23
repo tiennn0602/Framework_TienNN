@@ -120,7 +120,7 @@ public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02
 		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		System.out.println("Home Page - Click the Register link");
-		registerPage = homePage.clickToRegisterLink();
+		registerPage = homePage.openRegisterPage();
 		//registerPage = new RegisterPageObject(driver);
 		//moved to HomPageObject
 		
@@ -160,7 +160,7 @@ public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02
 	@Test
 	public void TC_02_LoginWithEmailAndPasswordEmpty() {
 		System.out.println("Home Page - Click the Login link");
-		loginPage = homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 		//loginPage = new LoginPageObject(driver);
 		//moved to HomePageObject
 		

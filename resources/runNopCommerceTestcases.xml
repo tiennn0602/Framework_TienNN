@@ -5,7 +5,7 @@
   <test name="Run on Firefox UI">
   <parameter name = "browser" value = "firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_05_Page_Generator_Manager"/>
+      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/>
     </classes>
   </test> 
   

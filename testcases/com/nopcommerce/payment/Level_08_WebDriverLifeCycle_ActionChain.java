@@ -69,7 +69,7 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		System.out.println("Home Page - Click the Register link");
-		registerPage = homePage.clickToRegisterLink();
+		registerPage = homePage.openRegisterPage();
 		//registerPage = new RegisterPageObject(driver);
 		//moved to HomPageObject
 		
@@ -107,7 +107,7 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 	@Test
 	public void TC_02_Login() {
 		System.out.println("Home Page - Click the Login link");
-		loginPage = homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 		loginPage.inputToEmailTextbox(email);
 		loginPage.inputToPasswordTextbox("");
 		System.out.println("Home Page - Click the Login button -> Navigate to HomePage");
@@ -140,6 +140,10 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 		
 		// Footer My Account (Customer Info) -> Search
 		searchPage = footerMyAccountPage.openSearchPage();
+		Thread.sleep(2000);
+		
+		// Search -> HomePage
+		homePage = searchPage.openHomePage();
 		Thread.sleep(2000);
 	}
 	

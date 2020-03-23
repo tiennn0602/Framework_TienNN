@@ -109,7 +109,7 @@ public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends Abstr
 		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		System.out.println("Home Page - Click the Register link");
-		registerPage = homePage.clickToRegisterLink();
+		registerPage = homePage.openRegisterPage();
 		//registerPage = new RegisterPageObject(driver);
 		//moved to HomPageObject
 		
@@ -149,7 +149,7 @@ public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends Abstr
 	@Test
 	public void TC_02_LoginWithEmailAndPasswordEmpty() {
 		System.out.println("Home Page - Click the Login link");
-		loginPage = homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 		//loginPage = new LoginPageObject(driver);
 		//moved to HomePageObject
 		

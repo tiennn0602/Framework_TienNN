@@ -49,7 +49,7 @@ public class Level_03_Page_Object_Pattern {
 		System.out.println("Open URL - Navigate to Home Page");
 		homePage = new HomePO(driver);
 		System.out.println("Home Page - Click the Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		registerPage = new RegisterPO(driver);
 		
 		System.out.println("Register Page - Click on the Gender radio button");
@@ -87,7 +87,7 @@ public class Level_03_Page_Object_Pattern {
 	@Test
 	public void TC_02_LoginWithEmailAndPasswordEmpty() {
 		System.out.println("Home Page - Click the Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		loginPage = new LoginPO(driver);
 		
 		System.out.println("Register Page - Leave Email empty");

@@ -15,6 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.FooterMyAccountPO;
 import pageObjects.HeaderMyAccountPO;
+import pageObjects.HomePO;
+import pageObjects.LoginPO;
+import pageObjects.RegisterPO;
 import pageObjects.SearchPO;
 import pageObjects.ShippingAndReturnPO;
 import pageObjects.SitemapPO;
@@ -272,9 +275,12 @@ public class AbstractPageObject {
 	return PageGeneratorManager.getHeaderMyAccountPage(driver);
 	}
 	
-	public HomePagePO openHomePage () {
-		waitToElementVisible(AbstractPageUI.);
+	public HomePO openHomePage() {
+	waitToElementVisible(AbstractPageUI.HEADER_HOMEPAGE_LINK);
+	clickToElement(AbstractPageUI.HEADER_HOMEPAGE_LINK);
+	return PageGeneratorManager.getHomePage(driver);
 	}
+	
 	public SitemapPO openSiteMapPage() {
 	waitToElementVisible(AbstractPageUI.FOOTER_SITEMAP_LINK);
 	clickToElement(AbstractPageUI.FOOTER_SITEMAP_LINK);
@@ -298,4 +304,17 @@ public class AbstractPageObject {
 	clickToElement(AbstractPageUI.FOOTER_SEARCH_LINK);
 	return PageGeneratorManager.getSearchPage(driver);
 	}
+	
+	public RegisterPO openRegisterPage() {
+	waitToElementVisible(AbstractPageUI.HEADER_REGISTER_LINK);
+	clickToElement(AbstractPageUI.HEADER_REGISTER_LINK);
+	return PageGeneratorManager.getRegisterPage(driver);
+	}
+
+	public LoginPO openLoginPage() {
+	waitToElementVisible(AbstractPageUI.HEADER_LOGIN_LINK);
+	clickToElement(AbstractPageUI.HEADER_LOGIN_LINK);
+	return PageGeneratorManager.getLoginPage(driver);
+	}
+
 }

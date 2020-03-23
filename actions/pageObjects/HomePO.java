@@ -14,18 +14,6 @@ public class HomePO extends AbstractPageObject {
 		driverGlobal = driverLocal;
 	}
 
-	public RegisterPO clickToRegisterLink() {
-		waitToElementVisible(HomePageUI.REGISTER_LINK);
-		clickToElement(HomePageUI.REGISTER_LINK);
-		return PageGeneratorManager.getRegisterPage(driverGlobal);
-	}
-
-	public LoginPO clickToLoginLink() {
-		waitToElementVisible(HomePageUI.LOGIN_LINK);
-		clickToElement(HomePageUI.LOGIN_LINK);
-		return PageGeneratorManager.getLoginPage(driverGlobal);
-	}
-
 	public boolean isMyAccountLinkDisplayed() {
 		waitToElementVisible(HomePageUI.HEADER_MY_ACCOUNT_LINK);
 		return isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK);
@@ -35,10 +23,4 @@ public class HomePO extends AbstractPageObject {
 		waitToElementVisible(HomePageUI.LOGOUT_LINK);
 		return isElementDisplayed(HomePageUI.LOGOUT_LINK);
 	}
-
-//	public HeaderMyAccountPO openHeaderMyAccountPage(WebDriver driver) {
-//		waitToElementVisible(HomePageUI.HEADER_MY_ACCOUNT_LINK);
-//		clickToElement(HomePageUI.HEADER_MY_ACCOUNT_LINK);
-//		return PageGeneratorManager.getHeaderMyAccountPage(driver);
-//	}
 }
