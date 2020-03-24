@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Nop Commerce]">
-  <parameter name="browser" value="firefox_ui"/>
-  <test name="Run on Firefox UI">
-    <parameter name="browser" value="firefox_ui"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/>
+      <class name="com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed"/>
     </classes>
-  </test> <!-- Run on Firefox UI -->
-</suite> <!-- Failed suite [Nop Commerce] -->
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_01_Check_Element_Displayed"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

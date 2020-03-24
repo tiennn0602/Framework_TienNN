@@ -5,7 +5,7 @@
   <test name="Run on Firefox UI">
     <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_08_WebDriverLifeCycle_ActionChain"/>
+      <class name="com.nopcommerce.payment.Level_09_DynamicLocator_Rest_Parameters"/>
     </classes>
   </test> <!-- Run on Firefox UI -->
 </suite> <!-- Failed suite [Nop Commerce] -->
