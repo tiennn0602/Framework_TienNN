@@ -15,7 +15,10 @@ public class AbstractPageUI {
 	public static final String FOOTER_MY_ACCOUNT_LINK = "//div[@class='footer']//a[text()='My account']";
 	public static final String FOOTER_SITEMAP_LINK = "//a[contains(text(),'Sitemap')]";
 	public static final String FOOTER_SEARCH_LINK = "//a[contains(text(),'Search')]";
-	public static final String FOOTER_SHOPPING_CART_LINK = "//a[contains(text(),'Search')]";
+	public static final String FOOTER_SHOPPING_CART_LINK = "//a[contains(text(),'Shopping cart')]";
 	public static final String FOOTER_SHIPPING_AND_RETURN_LINK = "//a[contains(text(),'Shipping & returns')]";
 	//18
+	
+	//Apply DYNAMIC (pageName) cho footer
+	public static final String DYNAMIC_FOOTER_LINK = "//div[@class='footer']//a[text()='%s']";
 }
