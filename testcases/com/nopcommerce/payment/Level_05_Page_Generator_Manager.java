@@ -153,7 +153,7 @@ public class Level_05_Page_Generator_Manager {
 	public void afterClass() {
 		driver.quit();
 	}
-
+	
 	public int randomNumber() {
 		Random random = new Random();
 		return random.nextInt(999999);

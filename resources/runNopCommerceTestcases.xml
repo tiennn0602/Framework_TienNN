@@ -5,7 +5,7 @@
   <test name="Run on Firefox UI">
   <parameter name = "browser" value = "firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_10_Check_Element_Undisplayed"/>
+      <class name="com.nopcommerce.payment.Level_11_Assert_Verify"/>
     </classes>
   </test> 
   

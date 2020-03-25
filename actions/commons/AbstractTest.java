@@ -1,5 +1,8 @@
 package commons;
 
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -35,6 +38,14 @@ public class AbstractTest {
 		System.out.println("Please input your browser");
 	}
 		System.out.println("Driver at AbtractTest = " + driver.toString());
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get("https://demo.nopcommerce.com/");
 		return driver;
+	}
+	
+	public int randomNumber() {
+		Random random = new Random();
+		return random.nextInt(999999);
 	}
 }

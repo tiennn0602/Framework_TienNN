@@ -5,7 +5,20 @@
   <test name="Run on Firefox UI">
     <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_09_DynamicLocator_Rest_Parameters"/>
+      <class name="com.nopcommerce.payment.Level_11_Assert_Verify"/>
     </classes>
   </test> <!-- Run on Firefox UI -->
+  <test name="Run on Firefox UI(failed)">
+    <parameter name="browser" value="firefox_ui"/>
+    <classes>
+      <class name="com.nopcommerce.payment.Level_11_Assert_Verify">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_02_Login"/>
+          <include name="afterClass"/>
+          <include name="TC_01_Register"/>
+        </methods>
+      </class> <!-- com.nopcommerce.payment.Level_11_Assert_Verify -->
+    </classes>
+  </test> <!-- Run on Firefox UI(failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->

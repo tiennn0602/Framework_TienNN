@@ -3,14 +3,9 @@ package com.nopcommerce.payment;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -220,10 +215,5 @@ public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-	}
-
-	public int randomNumber() {
-		Random random = new Random();
-		return random.nextInt(999999);
 	}
 }

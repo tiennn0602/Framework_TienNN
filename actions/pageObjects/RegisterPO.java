@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
 import commons.PageGeneratorManager;
+import pageUIs.LoginPageUI;
 import pageUIs.RegisterPageUI;
 
 public class RegisterPO extends AbstractPageObject{
@@ -65,5 +66,10 @@ public class RegisterPO extends AbstractPageObject{
 		clickToElement(RegisterPageUI.LOGOUT_LINK);	
 	//	return new HomePageObject(driver);
 		return PageGeneratorManager.getHomePage(driver);
+	}
+
+	public boolean isRegisterPageDisplayed() {
+		waitToElementVisible(RegisterPageUI.REGISTER_FORM);
+		return isElementDisplayed(RegisterPageUI.REGISTER_FORM);
 	}
 }

@@ -46,4 +46,9 @@ public class LoginPO extends AbstractPageObject {
 		return isElementDisplayed(LoginPageUI.WRONG_EMAIL_FORMAT);
 	}
 
+	public boolean isLoginPageDisplayed() {
+		waitToElementVisible(LoginPageUI.LOGIN_FORM);
+		return isElementDisplayed(LoginPageUI.LOGIN_FORM);
+	}
+
 }

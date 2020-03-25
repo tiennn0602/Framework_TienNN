@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite name="Failed suite [Nop Commerce]">
+  <parameter name="browser" value="firefox_ui"/>
+  <test name="Run on Firefox UI">
+    <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed"/>
+      <class name="com.nopcommerce.payment.Level_11_Assert_Verify"/>
     </classes>
-  </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  </test> <!-- Run on Firefox UI -->
+  <test name="Run on Firefox UI(failed)">
+    <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed">
+      <class name="com.nopcommerce.payment.Level_11_Assert_Verify">
         <methods>
-          <include name="afterClass"/>
-          <include name="TC_01_Check_Element_Displayed"/>
           <include name="beforeClass"/>
+          <include name="TC_02_Login"/>
+          <include name="afterClass"/>
+          <include name="TC_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.java.Java_02_Check_Element_Displayed_Undisplayed -->
+      </class> <!-- com.nopcommerce.payment.Level_11_Assert_Verify -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Run on Firefox UI(failed) -->
+</suite> <!-- Failed suite [Nop Commerce] -->

@@ -151,9 +151,4 @@ public class Level_08_WebDriverLifeCycle_ActionChain extends AbstractTest {
 	public void afterClass() {
 		driver.quit();
 	}
-
-	public int randomNumber() {
-		Random random = new Random();
-		return random.nextInt(999999);
-	}
 }
