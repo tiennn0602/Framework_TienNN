@@ -139,7 +139,7 @@ public class Level_03_Page_Object_Pattern {
 		loginPage.clickLoginButton();
 		homePage = new HomePO(driver);
 		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
-		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_LOGOUT_LINK));
 	}
 
 	@AfterClass

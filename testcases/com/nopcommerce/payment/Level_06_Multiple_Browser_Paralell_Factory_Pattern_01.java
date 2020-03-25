@@ -203,7 +203,7 @@ public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends Abstr
 		//homePage = new HomePageObject(driver);
 		//moved to LoginPageObject
 		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
-		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_LOGOUT_LINK));
 	}
 
 	@AfterClass

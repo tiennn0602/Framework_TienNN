@@ -214,7 +214,7 @@ public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02
 		//homePage = new HomePageObject(driver);
 		//moved to LoginPageObject
 		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
-		assertTrue(homePage.isElementDisplayed(HomePageUI.LOGOUT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_LOGOUT_LINK));
 	}
 
 	@AfterClass

@@ -2,10 +2,12 @@ package commons;
 
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -201,15 +203,34 @@ public class AbstractPageObject {
 	}
 
 	public boolean isElementDisplayed(String locator) {
-		element = find(locator);
-		return element.isDisplayed();
+		overrideGlobalTimeout(shortTimeout);
+		try {
+			element = find(locator);
+			overrideGlobalTimeout(longTimeout);
+			return element.isDisplayed();		
+		} catch (NoSuchElementException e) {
+			overrideGlobalTimeout(longTimeout);
+			return false;
+		}
+	}
+	
+	public void overrideGlobalTimeout(long timeout) {
+		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+		
 	}
 
 	// n tham so
 	public boolean isElementDisplayed(String locator, String... values) {
 		locator = castRestParameters(locator, values);
-		element = find(locator);
-		return element.isDisplayed();
+		overrideGlobalTimeout(shortTimeout);
+		try {
+			element = find(locator);
+			overrideGlobalTimeout(longTimeout);
+			return element.isDisplayed();		
+		} catch (Exception e) {
+			overrideGlobalTimeout(longTimeout);
+			return false;
+		}
 	}
 
 	public boolean isElementSelected(String locator) {
@@ -304,7 +325,9 @@ public class AbstractPageObject {
 
 	public void waitToElementInvisible(String locator) {
 		by = byXpath(locator);
+		overrideGlobalTimeout(shortTimeout);
 		waitExplicit.until(ExpectedConditions.invisibilityOfElementLocated(by));
+		overrideGlobalTimeout(longTimeout);
 	}
 
 	public void waitToElementClickable(String locator) {

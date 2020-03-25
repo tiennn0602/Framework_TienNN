@@ -3,7 +3,6 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.AbstractPageObject;
-import commons.PageGeneratorManager;
 import pageUIs.HomePageUI;
 
 public class HomePO extends AbstractPageObject {
@@ -20,7 +19,18 @@ public class HomePO extends AbstractPageObject {
 	}
 
 	public boolean isLogoutLinkDisplayed() {
-		waitToElementVisible(HomePageUI.LOGOUT_LINK);
-		return isElementDisplayed(HomePageUI.LOGOUT_LINK);
+		waitToElementVisible(HomePageUI.HEADER_LOGOUT_LINK);
+		return isElementDisplayed(HomePageUI.HEADER_LOGOUT_LINK);
 	}
+	
+	public boolean isRegisterLinkUndisplayed() {
+		waitToElementInvisible(HomePageUI.HEADER_REGISTER_LINK);
+		return isElementDisplayed(HomePageUI.HEADER_REGISTER_LINK);
+	}
+
+	public boolean isLoginLinkUndisplayed() {
+		waitToElementInvisible(HomePageUI.HEADER_LOGIN_LINK);
+		return isElementDisplayed(HomePageUI.HEADER_LOGIN_LINK);
+	}
+	
 }
