@@ -1,22 +1,21 @@
 package com.nopcommerce.payment;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-
-import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.assertEquals;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import commons.AbstractPage;
+import commons.AbstractPageObject;
 
-public class Level_02_AbstractPage_02_Extends extends AbstractPage {
+public class Level_02_AbstractPage_02_Extends extends AbstractPageObject {
 
 	WebDriver driver;
 	Select select;

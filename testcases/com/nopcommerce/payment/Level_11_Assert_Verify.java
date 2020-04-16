@@ -13,7 +13,6 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.PageGeneratorManager;
-import driverFactoryPattern.DriverManager;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
 import pageObjects.RegisterPO;
@@ -23,7 +22,6 @@ public class Level_11_Assert_Verify extends AbstractTest {
 	private WebDriver driver;
 	Select select;
 	String email, password;
-	private DriverManager driverManager;
 	private HomePO homePage;
 	private RegisterPO registerPage;
 	private LoginPO loginPage;
@@ -47,7 +45,7 @@ public class Level_11_Assert_Verify extends AbstractTest {
 		
 		System.out.println("TC_01_Register - Register Page - Verify the Register page is displayed");
 		assertTrue(registerPage.isRegisterPageDisplayed());
-		assertFalse(registerPage.isRegisterPageDisplayed());
+		//assertFalse(registerPage.isRegisterPageDisplayed());
 
 		System.out.println("TC_01_Register - Register Page - Input data for all required fields");
 		registerPage.clickToMaleRadioButton();
@@ -56,12 +54,11 @@ public class Level_11_Assert_Verify extends AbstractTest {
 		registerPage.inputToEmailTextbox(email);
 		registerPage.inputToPasswordTextbox(password);
 		registerPage.inputToConfirmPasswordTextbox(password);
-
-		System.out.println("TC_01_Register - Register Page - Click Register button");
 		registerPage.clickRegisterButton();
 
 		System.out.println("TC_01_Register - Register Page - Verify a successful message displayed");
 		assertTrue(registerPage.isSuccessfulMessageDisplayed());
+		//assertFalse(registerPage.isSuccessfulMessageDisplayed());
 
 		System.out.println("TC_01_Register - Register Page - Verify a successful registration text displayed");
 		assertEquals(registerPage.getSucessfulRegistrationText(), "Your registration completed");
