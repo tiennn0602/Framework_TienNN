@@ -1,4 +1,4 @@
-package com.nopcommerce.payment;
+package com.nopcommerce.framework;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -14,19 +14,16 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.PageGeneratorManager;
-import driverFactoryPattern.DriverManager;
-import driverFactoryPattern.DriverManagerFactory;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
 import pageObjects.RegisterPO;
 import pageUIs.HomePageUI;
 
-public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02 extends AbstractTest {
+public class Level_06_Multiple_Browser_Paralell_Factory_Pattern_01 extends AbstractTest {
 
 	private WebDriver driver;
 	Select select;
 	String email;
-	private DriverManager driverManager;
 	private HomePO homePage;
 	private RegisterPO registerPage;
 	private LoginPO loginPage;
@@ -35,15 +32,7 @@ public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02
 	@BeforeClass
  	public void beforeClass(String browserName) {
 		System.out.println("Browser Name = " + browserName);
-		
-		//Get ra browser service
-		driverManager = DriverManagerFactory.getBrowserDriver(browserName);
-		
-		//Init browser driver
-		driver = driverManager.getDriver();
-		
-		//driver =  getBrowserDriver(browserName);
-		
+		driver =  getBrowserDriver(browserName);
 		System.out.println("Driver at Class Test = " + driver.toString());
 //		String rootFolder = System.getProperty("user.dir");
 		

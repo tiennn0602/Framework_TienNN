@@ -1,4 +1,4 @@
-package com.nopcommerce.payment;
+package com.nopcommerce.framework;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -13,18 +13,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageFactory.HomePageFactory;
-import pageFactory.LoginPageFactory;
-import pageFactory.RegisterPageFactory;
+import commons.PageGeneratorManager;
+import pageObjects.HomePO;
+import pageObjects.LoginPO;
+import pageObjects.RegisterPO;
+import pageUIs.HomePageUI;
 
-public class Level_04_Selenium_Page_Factory {
+public class Level_05_Page_Generator_Manager {
 
 	WebDriver driver;
 	Select select;
 	String email;
-	private HomePageFactory homePage;
-	private RegisterPageFactory registerPage;
-	private LoginPageFactory loginPage;
+	private HomePO homePage;
+	private RegisterPO registerPage;
+	private LoginPO loginPage;
 	
 	@BeforeClass
  	public void beforeClass() {
@@ -38,20 +40,21 @@ public class Level_04_Selenium_Page_Factory {
 		
 		email = "tien_nguyen" + randomNumber() + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		
 		driver.get("https://demo.nopcommerce.com/");
-		System.out.println("Open URL - Navigate to Home Page");
-		homePage = new HomePageFactory(driver);
 	}
 
 	@Test
 	public void TC_01_Register() {
-		//TDD: Test Driven Development	
-		System.out.println("TC-01");
-		
+		//TDD: Test Driven Development
+		System.out.println("Open URL - Navigate to Home Page");
+		//homePage = new HomePageObject(driver);
+		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		System.out.println("Home Page - Click the Register link");
-		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageFactory(driver);
+		registerPage = homePage.openRegisterPage();
+		//registerPage = new RegisterPageObject(driver);
+		//moved to HomPageObject
 		
 		System.out.println("Register Page - Click on the Gender radio button");
 		registerPage.clickToMaleRadioButton();
@@ -81,18 +84,17 @@ public class Level_04_Selenium_Page_Factory {
 		assertEquals(registerPage.getSucessfulRegistrationText(),"Your registration completed");
 		
 		System.out.println("Register Page - Click Logout Link -> navigate to Home Page");
-		registerPage.clickLogoutLink();
-		homePage = new HomePageFactory(driver);
+		homePage = registerPage.clickLogoutLink();
+		//homePage = new HomePageObject(driver);
+		//moved to RegisterPageObject
 	}
 
 	@Test
 	public void TC_02_LoginWithEmailAndPasswordEmpty() {
-		
-		System.out.println("TC-02");
-		
 		System.out.println("Home Page - Click the Login link");
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageFactory(driver);
+		loginPage = homePage.openLoginPage();
+		//loginPage = new LoginPageObject(driver);
+		//moved to HomePageObject
 		
 		System.out.println("Register Page - Leave Email empty");
 		loginPage.inputToEmailTextbox("");
@@ -109,7 +111,6 @@ public class Level_04_Selenium_Page_Factory {
 	
 	@Test
 	public void TC_03_LoginWithEmailEmpty() {
-		System.out.println("TC-03");
 		System.out.println("Register Page - Leave Email empty and Password Entered");
 		loginPage.inputToEmailTextbox("");
 		loginPage.inputToPasswordTextbox("123456");
@@ -120,13 +121,13 @@ public class Level_04_Selenium_Page_Factory {
 	
 	@Test
 	public void TC_04_LoginWithWrongEmailFormat() {
-		System.out.println("TC-04");
 		System.out.println("Register Page - Enter a wrong email format");
 		loginPage.inputToEmailTextbox("abc");
 		loginPage.inputToPasswordTextbox("123456");
 		loginPage.clickLoginButton();
 		assertTrue(loginPage.isWrongEmailMessageDisplayed());
 	}
+	
 	
 //	public void TC_05_LoginWithPasswordEmpty() {
 //		System.out.println("Register Page - Enter Email and Password empty");
@@ -138,21 +139,21 @@ public class Level_04_Selenium_Page_Factory {
 	
 	@Test
 	public void TC_05_LoginWithValidEmailAndPassword() {
-		System.out.println("TC-06");
 		System.out.println("Register Page - Enter An Valid Email and Password");
 		loginPage.inputToEmailTextbox(email);
 		loginPage.inputToPasswordTextbox("123456");
-		loginPage.clickLoginButton();
-		homePage = new HomePageFactory(driver);
-		assertTrue(homePage.isMyAccountLinkDisplayed());
-		assertTrue(homePage.isLogoutLinkDisplayed());
+		homePage = loginPage.clickLoginButton();
+		//homePage = new HomePageObject(driver);
+		//moved to LoginPageObject
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_MY_ACCOUNT_LINK));
+		assertTrue(homePage.isElementDisplayed(HomePageUI.HEADER_LOGOUT_LINK));
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
 	}
-
+	
 	public int randomNumber() {
 		Random random = new Random();
 		return random.nextInt(999999);

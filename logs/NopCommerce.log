@@ -1,0 +1,48 @@
+2020-04-17 11:13:34,582 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 01:...
+2020-04-17 11:13:34,598 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 02:...
+2020-04-17 11:13:34,602 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
+2020-04-17 11:13:34,602 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
+2020-04-17 11:13:36,116 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
+2020-04-17 11:13:36,196 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 11:13:36,198 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
+2020-04-17 11:13:38,612 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
+2020-04-17 11:13:38,682 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 11:13:38,682 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
+2020-04-17 11:13:38,725 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:13:38,725 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-17 11:13:41,138 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
+2020-04-17 11:13:42,328 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
+2020-04-17 11:13:42,392 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:13:42,392 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
+2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - tien_nguyen230770@gmail.com
+2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Automation
+2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
+2020-04-17 11:13:43,352 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-17 11:13:43,438 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:13:43,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:13:43,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-17 11:13:53,620 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:14:03,723 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:14:59,750 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 01:...
+2020-04-17 11:14:59,764 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 02:...
+2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
+2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
+2020-04-17 11:15:01,342 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
+2020-04-17 11:15:01,451 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 11:15:01,453 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
+2020-04-17 11:15:03,753 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
+2020-04-17 11:15:03,830 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 11:15:03,831 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
+2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-17 11:15:05,371 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
+2020-04-17 11:15:05,872 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
+2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
+2020-04-17 11:15:06,113 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
+2020-04-17 11:15:06,952 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-17 11:15:07,054 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:15:07,114 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:15:07,115 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-17 11:15:17,213 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 11:15:27,277 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 

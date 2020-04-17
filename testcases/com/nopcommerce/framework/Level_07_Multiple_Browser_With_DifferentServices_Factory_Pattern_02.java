@@ -1,49 +1,112 @@
-package com.nopcommerce.payment;
+package com.nopcommerce.framework;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.AbstractTest;
 import commons.PageGeneratorManager;
+import driverFactoryPattern.DriverManager;
+import driverFactoryPattern.DriverManagerFactory;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
 import pageObjects.RegisterPO;
 import pageUIs.HomePageUI;
 
-public class Level_05_Page_Generator_Manager {
+public class Level_07_Multiple_Browser_With_DifferentServices_Factory_Pattern_02 extends AbstractTest {
 
-	WebDriver driver;
+	private WebDriver driver;
 	Select select;
 	String email;
+	private DriverManager driverManager;
 	private HomePO homePage;
 	private RegisterPO registerPage;
 	private LoginPO loginPage;
 	
+	@Parameters("browser") //apply for before class
 	@BeforeClass
- 	public void beforeClass() {
-
-		String rootFolder = System.getProperty("user.dir");
-		System.setProperty("webdriver.gecko.driver", rootFolder + "\\resources\\geckodriver.exe");
-		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, rootFolder + "\\Firefoxlogs.txt");
-		driver = new FirefoxDriver();
-		System.out.println("Driver ID = " + driver.toString());
+ 	public void beforeClass(String browserName) {
+		System.out.println("Browser Name = " + browserName);
 		
+		//Get ra browser service
+		driverManager = DriverManagerFactory.getBrowserDriver(browserName);
+		
+		//Init browser driver
+		driver = driverManager.getDriver();
+		
+		//driver =  getBrowserDriver(browserName);
+		
+		System.out.println("Driver at Class Test = " + driver.toString());
+//		String rootFolder = System.getProperty("user.dir");
+		
+		//equalsIgnoreCase = khong phan biet hoa thuong
+//		if (browserName.equalsIgnoreCase("firefox_ui"))	{
+//			System.setProperty("webdriver.gecko.driver", rootFolder + "\\resources\\geckodriver.exe");
+//			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+//			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, rootFolder + "\\Firefoxlogs.txt");
+//			driver = new FirefoxDriver();
+//		} else if (browserName.equalsIgnoreCase("firefox_headless")){
+//			System.setProperty("webdriver.gecko.driver", rootFolder + "\\resources\\geckodriver.exe");
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.setHeadless(true);
+//			driver = new FirefoxDriver(options);
+//		} else if (browserName.equalsIgnoreCase("chrome_ui")) {
+//			System.setProperty("webdriver.chrome.driver", rootFolder + "\\resources\\chromedriver.exe");
+//			driver = new ChromeDriver();
+//		} else if (browserName.equalsIgnoreCase("chrome_headless")) {
+//			System.setProperty("webdriver.chrome.driver", rootFolder + "\\resources\\chromedriver.exe");
+//			ChromeOptions options = new ChromeOptions();
+//			options.setHeadless(true);
+//			driver = new ChromeDriver(options);
+//		} else {
+//			System.out.println("Please input your browser");
+//		}
+	// ---> move to AbstractTest de su dung duoc trong nhieu class khac nhau	
+//		switch (browserName) {
+//		case "firefox_ui":
+//			System.setProperty("webdriver.gecko.driver", rootFolder + "\\resources\\geckodriver.exe");
+//			System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
+//			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, rootFolder + "\\Firefoxlogs.txt");
+//			driver = new FirefoxDriver();
+//			break;
+//			
+//		case "firefox_headless":
+//			System.setProperty("webdriver.gecko.driver", rootFolder + "\\resources\\geckodriver.exe");
+//			FirefoxOptions options = new FirefoxOptions();
+//			options.setHeadless(true);
+//			driver = new FirefoxDriver(options);
+//			break;
+//			
+//		case "chrome_ui":
+//			System.setProperty("webdriver.chrome.driver", rootFolder + "\\resources\\chromedriver.exe");
+//			driver = new ChromeDriver();
+//			break;
+//			
+//		case "chrome_headless":
+//			System.setProperty("webdriver.chrome.driver", rootFolder + "\\resources\\chromedriver.exe");
+//			ChromeOptions chromeOptions = new ChromeOptions();
+//			chromeOptions.setHeadless(true);
+//			driver = new ChromeDriver(chromeOptions);
+//			break;
+//		default:
+//			System.out.println("Please input your browser");
+//			break;
+//		}
+			
 		email = "tien_nguyen" + randomNumber() + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
 		driver.get("https://demo.nopcommerce.com/");
 	}
 
+	//@Parameters("browser")
 	@Test
 	public void TC_01_Register() {
 		//TDD: Test Driven Development
@@ -152,10 +215,5 @@ public class Level_05_Page_Generator_Manager {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-	}
-	
-	public int randomNumber() {
-		Random random = new Random();
-		return random.nextInt(999999);
 	}
 }

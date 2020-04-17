@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,15 +102,24 @@
                     <div class="method-list-content failed suite-Nop_Commerce">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_11_Assert_Verify" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.payment.Level_11_Assert_Verify" hash-for-method="TC_02_Login">TC_02_Login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.framework.Level_11_Assert_Verify" hash-for-method="TC_01_Register">TC_01_Register</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Nop_Commerce -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Nop_Commerce" class="hide-methods passed suite-Nop_Commerce"> (hide)</a> <!-- hide-methods passed suite-Nop_Commerce -->
+                      <a href="#" panel-name="suite-Nop_Commerce" class="show-methods passed suite-Nop_Commerce"> (show)</a> <!-- show-methods passed suite-Nop_Commerce -->
+                    </span>
+                    <div class="method-list-content passed suite-Nop_Commerce">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Nop_Commerce" title="com.nopcommerce.framework.Level_11_Assert_Verify" hash-for-method="TC_02_Login">TC_02_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Nop_Commerce -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -125,7 +134,7 @@
           <div class="suite-Nop_Commerce-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.nopcommerce.payment.Level_11_Assert_Verify</span>
+              <span class="class-name">com.nopcommerce.framework.Level_11_Assert_Verify</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -133,25 +142,39 @@
                   <a name="TC_01_Register">
                   </a> <!-- TC_01_Register -->
                   <span class="method-name">TC_01_Register</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.nopcommerce.payment.Level_11_Assert_Verify.TC_01_Register(Level_11_Assert_Verify.java:50)
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_02_Login">
-                  </a> <!-- TC_02_Login -->
-                  <span class="method-name">TC_02_Login</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.nopcommerce.payment.Level_11_Assert_Verify.TC_02_Login(Level_11_Assert_Verify.java:80)
-... Removed 28 stack frames
+                  <div class="stack-trace">java.lang.Throwable: Mulitple failures (2):
+Failure 1 of 2
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.AbstractTest.checkFailed(AbstractTest.java:96)
+	at commons.AbstractTest.verifyFalse(AbstractTest.java:106)
+	at com.nopcommerce.framework.Level_11_Assert_Verify.TC_01_Register(Level_11_Assert_Verify.java:45)
+
+Failure 2 of 2
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.AbstractTest.checkFailed(AbstractTest.java:96)
+	at commons.AbstractTest.verifyFalse(AbstractTest.java:106)
+	at com.nopcommerce.framework.Level_11_Assert_Verify.TC_01_Register(Level_11_Assert_Verify.java:57)
+... Removed 56 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Nop_Commerce-class-failed -->
+          <div class="suite-Nop_Commerce-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nopcommerce.framework.Level_11_Assert_Verify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_Login">
+                  </a> <!-- TC_02_Login -->
+                  <span class="method-name">TC_02_Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Nop_Commerce-class-passed -->
         </div> <!-- panel Nop_Commerce -->
         <div panel-name="test-xml-Nop_Commerce" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -162,10 +185,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Nop Commerce&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Run on Firefox UI&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;firefox_ui&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.payment.Level_11_Assert_Verify&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.framework.Level_11_Assert_Verify&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Firefox UI --&gt;
 &lt;/suite&gt; &lt;!-- Nop Commerce --&gt;
@@ -207,18 +233,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_01_Register')
-data.setCell(0, 2, 'com.nopcommerce.payment.Level_11_Assert_Verify')
-data.setCell(0, 3, 1864);
+data.setCell(0, 1, 'TC_02_Login')
+data.setCell(0, 2, 'com.nopcommerce.framework.Level_11_Assert_Verify')
+data.setCell(0, 3, 21908);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_02_Login')
-data.setCell(1, 2, 'com.nopcommerce.payment.Level_11_Assert_Verify')
-data.setCell(1, 3, 671);
+data.setCell(1, 1, 'TC_01_Register')
+data.setCell(1, 2, 'com.nopcommerce.framework.Level_11_Assert_Verify')
+data.setCell(1, 3, 5595);
 window.suiteTableData['Nop_Commerce']= { tableData: data, tableDiv: 'times-div-Nop_Commerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Nop_Commerce">
               </div> <!-- times-div-Nop_Commerce -->
             </div> <!-- times-div -->
@@ -229,6 +255,58 @@ return data;
             <span class="header-content">Reporter output for Nop Commerce</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_02_Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">2020-04-17 11:15:05,371 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:05,872 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:06,113 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:06,952 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:07,054 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:07,114 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:07,115 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:17,213 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:27,277 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_01_Register</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
+</span>
+                <span class="reporter-method-output">2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:01,342 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:01,451 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:01,453 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:03,753 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:03,830 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:03,831 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+</span>
+                <span class="reporter-method-output">2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
+</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Nop_Commerce" class="panel">
@@ -244,7 +322,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.payment.Level_11_Assert_Verify</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nopcommerce.framework.Level_11_Assert_Verify</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(firefox_ui)</span>
                 <span class="method-start">0 ms</span>
@@ -253,17 +331,15 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC_01_Register</span>
-                <span class="method-start">7125 ms</span>
+                <span class="method-start">5542 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC_02_Login</span>
-                <span class="method-start">8993 ms</span>
+                <span class="method-start">11143 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">9665 ms</span>
+                <span class="method-start">33054 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

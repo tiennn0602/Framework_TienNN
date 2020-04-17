@@ -2,22 +2,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Nop Commerce]">
   <parameter name="browser" value="firefox_ui"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+  </listeners>
   <test name="Run on Firefox UI">
     <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_11_Assert_Verify"/>
+      <class name="com.nopcommerce.framework.Level_11_Assert_Verify"/>
     </classes>
   </test> <!-- Run on Firefox UI -->
   <test name="Run on Firefox UI(failed)">
     <parameter name="browser" value="firefox_ui"/>
     <classes>
-      <class name="com.nopcommerce.payment.Level_11_Assert_Verify">
+      <class name="com.nopcommerce.framework.Level_11_Assert_Verify">
         <methods>
           <include name="beforeClass"/>
-          <include name="TC_02_Login"/>
           <include name="afterClass"/>
+          <include name="TC_01_Register"/>
         </methods>
-      </class> <!-- com.nopcommerce.payment.Level_11_Assert_Verify -->
+      </class> <!-- com.nopcommerce.framework.Level_11_Assert_Verify -->
     </classes>
   </test> <!-- Run on Firefox UI(failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->

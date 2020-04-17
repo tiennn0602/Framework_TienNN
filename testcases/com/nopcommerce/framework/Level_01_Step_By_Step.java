@@ -1,4 +1,4 @@
-package com.nopcommerce.payment;
+package com.nopcommerce.framework;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

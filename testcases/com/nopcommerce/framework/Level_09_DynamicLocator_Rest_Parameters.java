@@ -1,7 +1,6 @@
-package com.nopcommerce.payment;
+package com.nopcommerce.framework;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.util.concurrent.TimeUnit;
@@ -17,11 +16,17 @@ import commons.AbstractTest;
 import commons.PageGeneratorManager;
 import driverFactoryPattern.DriverManager;
 import driverFactoryPattern.DriverManagerFactory;
+import pageObjects.FooterMyAccountPO;
+import pageObjects.HeaderMyAccountPO;
 import pageObjects.HomePO;
 import pageObjects.LoginPO;
 import pageObjects.RegisterPO;
+import pageObjects.SearchPO;
+import pageObjects.ShippingAndReturnPO;
+import pageObjects.ShoppingCartPO;
+import pageObjects.SitemapPO;
 
-public class Level_10_Check_Element_Undisplayed extends AbstractTest {
+public class Level_09_DynamicLocator_Rest_Parameters extends AbstractTest {
 
 	private WebDriver driver;
 	Select select;
@@ -30,6 +35,12 @@ public class Level_10_Check_Element_Undisplayed extends AbstractTest {
 	private HomePO homePage;
 	private RegisterPO registerPage;
 	private LoginPO loginPage;
+	private HeaderMyAccountPO headerMyAccountPage;
+	private ShoppingCartPO shoppingCartPage;
+	private FooterMyAccountPO footerMyAccountPage;
+	private SitemapPO siteMapPage;
+	private ShippingAndReturnPO shippingAndReturnPage;
+	private SearchPO searchPage;
 
 	@Parameters("browser") // apply for before class
 	@BeforeClass
@@ -50,6 +61,7 @@ public class Level_10_Check_Element_Undisplayed extends AbstractTest {
 		driver.get("https://demo.nopcommerce.com/");
 	}
 
+	// @Parameters("browser")
 	@Test
 	public void TC_01_Register() {
 		// TDD: Test Driven Development
@@ -92,6 +104,7 @@ public class Level_10_Check_Element_Undisplayed extends AbstractTest {
 		System.out.println("Register Page - Click Logout Link -> navigate to Home Page");
 		homePage = registerPage.clickLogoutLink();
 	}
+
 	@Test
 	public void TC_02_Login() {
 		System.out.println("Home Page - Click the Login link");
@@ -101,12 +114,56 @@ public class Level_10_Check_Element_Undisplayed extends AbstractTest {
 		System.out.println("Home Page - Click the Login button -> Navigate to HomePage");
 		homePage = loginPage.clickLoginButton();
 
-		System.out.println("Home Page - Verify 'My Account' and 'Logout' link are displayed");
 		assertTrue(homePage.isMyAccountLinkDisplayed());
 		assertTrue(homePage.isLogoutLinkDisplayed());
-		System.out.println("Home Page - Verify 'Register' and 'Login' link are un-displayed");
-		assertFalse(homePage.isRegisterLinkUndisplayed());
-		assertFalse(homePage.isLoginLinkUndisplayed());
+	}
+
+	@Test
+	public void TC_03_Dynamic_Locator_LessPages() throws Exception {
+		// HomePage -> Footer My Account (Customer Info)
+		footerMyAccountPage = (FooterMyAccountPO) homePage.openMultiplePage("My account");
+		Thread.sleep(2000);
+
+		// Footer My Account (Customer Info) -> Footer (Sitemap)
+		siteMapPage = (SitemapPO) footerMyAccountPage.openMultiplePage("Sitemap");
+		Thread.sleep(2000);
+
+		// Footer (Site map) -> Shipping & Returns
+		shippingAndReturnPage = (ShippingAndReturnPO) siteMapPage.openMultiplePage("Shipping & returns");
+		Thread.sleep(2000);
+
+		// Shipping & Returns -> Search
+		searchPage = (SearchPO) shippingAndReturnPage.openMultiplePage("Search");
+		Thread.sleep(2000);
+
+		// Search -> Shopping Cart
+		shoppingCartPage = (ShoppingCartPO) searchPage.openMultiplePage("Shopping cart");
+		Thread.sleep(2000);
+	}
+
+	@Test
+	public void TC_04_Dynamic_Locator_ManyPages() throws Exception {
+		// Shopping Cart -> Footer My Account (Customer Info)
+		shoppingCartPage.openMultiplePages("My account");
+		//Tính đóng gói (Encapsolution) - Che giấu sự khởi tạo
+		footerMyAccountPage = PageGeneratorManager.getFooterMyAccountPage(driver);
+		
+		// Footer My Account (Customer Info) -> Footer (Sitemap)
+		footerMyAccountPage.openMultiplePages("Sitemap");
+		siteMapPage = PageGeneratorManager.getSiteMapPage(driver);
+		
+		// Footer (Site map) -> Shipping & Returns
+		siteMapPage.openMultiplePages("Shipping & returns");
+		shippingAndReturnPage = PageGeneratorManager.getShippingAndReturnPage(driver);
+		
+		// Shipping & Returns -> Search
+		shippingAndReturnPage.openMultiplePages("Search");
+		searchPage = PageGeneratorManager.getSearchPage(driver);
+
+		// Search -> Shopping Cart
+		searchPage.openMultiplePages("Shopping cart");
+		shoppingCartPage = PageGeneratorManager.getShoppingCartPage(driver);
+		Thread.sleep(5000);
 	}
 
 	@AfterClass

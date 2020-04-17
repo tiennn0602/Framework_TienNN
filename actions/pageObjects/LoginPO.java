@@ -21,7 +21,7 @@ public class LoginPO extends AbstractPageObject {
 
 	public void inputToPasswordTextbox(String string) {
 		waitToElementVisible(LoginPageUI.PASSWORD_TEXTBOX);
-		sendKeytoElement(LoginPageUI.PASSWORD_TEXTBOX, "123456");
+		sendKeytoElement(LoginPageUI.PASSWORD_TEXTBOX, "Automation");
 	}
 
 	public HomePO clickLoginButton() {
