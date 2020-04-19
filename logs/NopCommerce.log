@@ -1,48 +1,157 @@
-2020-04-17 11:13:34,582 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 01:...
-2020-04-17 11:13:34,598 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 02:...
-2020-04-17 11:13:34,602 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
-2020-04-17 11:13:34,602 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
-2020-04-17 11:13:36,116 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
-2020-04-17 11:13:36,196 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
-2020-04-17 11:13:36,198 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
-2020-04-17 11:13:38,612 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
-2020-04-17 11:13:38,682 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
-2020-04-17 11:13:38,682 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
-2020-04-17 11:13:38,725 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:13:38,725 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
-2020-04-17 11:13:41,138 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
-2020-04-17 11:13:42,328 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
-2020-04-17 11:13:42,392 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:13:42,392 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
-2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - tien_nguyen230770@gmail.com
-2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Automation
-2020-04-17 11:13:42,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
-2020-04-17 11:13:43,352 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
-2020-04-17 11:13:43,438 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:13:43,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:13:43,522 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
-2020-04-17 11:13:53,620 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:14:03,723 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:14:59,750 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 01:...
-2020-04-17 11:14:59,764 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 02:...
-2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
-2020-04-17 11:14:59,776 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
-2020-04-17 11:15:01,342 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
-2020-04-17 11:15:01,451 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
-2020-04-17 11:15:01,453 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
-2020-04-17 11:15:03,753 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
-2020-04-17 11:15:03,830 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
-2020-04-17 11:15:03,831 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
-2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:15:03,875 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
-2020-04-17 11:15:05,371 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
-2020-04-17 11:15:05,872 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
-2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:15:05,938 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
-2020-04-17 11:15:06,113 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
-2020-04-17 11:15:06,952 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
-2020-04-17 11:15:07,054 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:15:07,114 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:15:07,115 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
-2020-04-17 11:15:17,213 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
-2020-04-17 11:15:27,277 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:35:57,137 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 01:...
+2020-04-17 14:35:57,139 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Pre-condition - Step 02:...
+2020-04-17 14:35:57,151 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 01: Open URL
+2020-04-17 14:35:57,151 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 02: Click the Register link
+2020-04-17 14:35:57,808 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 03: Verify the Register page is displayed
+2020-04-17 14:35:57,880 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 14:35:57,884 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 04: Input data for all required fields
+2020-04-17 14:36:00,116 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 05: Verify a successful message displayed
+2020-04-17 14:36:00,198 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- FAILED -------------------------- 
+2020-04-17 14:36:00,198 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 06: Verify a successful registration text displayed
+2020-04-17 14:36:00,245 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:36:00,245 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-17 14:36:01,828 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 01: Click the Login link
+2020-04-17 14:36:03,099 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 02: Verify the Login page is displayed
+2020-04-17 14:36:03,213 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:36:03,213 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 03: Input email and password
+2020-04-17 14:36:03,443 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 04: Click the Login button
+2020-04-17 14:36:05,963 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-17 14:36:06,060 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:36:06,135 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:36:06,135 INFO  com.nopcommerce.framework.Level_11_Assert_Verify - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-17 14:36:16,197 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-17 14:36:26,250 INFO  com.nopcommerce.framework.Level_11_Assert_Verify -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:25,650 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 10:36:25,655 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 10:36:27,247 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 10:36:27,324 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:36:27,327 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 10:36:30,616 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 10:36:30,694 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:36:30,695 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 10:36:30,745 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:30,745 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 10:36:32,482 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 10:36:32,976 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 10:36:33,046 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:33,046 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 03: Input email and password
+2020-04-19 10:36:33,184 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 04: Click the Login button
+2020-04-19 10:36:34,847 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-19 10:36:34,946 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:35,011 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:35,012 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-19 10:36:45,086 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:55,150 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:36:55,154 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:36:56,236 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 10:37:01,296 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 10:37:01,297 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 10:37:02,820 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 10:37:02,891 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:37:02,892 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 10:37:05,331 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 10:37:05,388 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:37:05,388 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 10:37:05,439 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:37:05,439 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 10:37:07,181 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 10:37:07,282 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 10:37:37,318 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:37:38,282 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 10:38:51,385 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 10:38:51,386 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 10:38:52,907 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 10:38:52,968 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:38:52,970 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 10:38:55,959 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 10:38:56,044 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 10:38:56,045 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 10:38:56,096 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:38:56,096 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 10:38:58,021 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 10:38:58,755 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 10:38:58,812 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:38:58,812 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 03: Input email and password
+2020-04-19 10:38:58,945 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 04: Click the Login button
+2020-04-19 10:39:00,751 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-19 10:39:00,825 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:39:00,885 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:39:00,885 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-19 10:39:10,943 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:39:20,984 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 10:39:20,988 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:39:21,979 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 10:55:48,190 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:55:49,352 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 10:56:18,907 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:56:20,011 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 10:56:25,135 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 10:56:26,088 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:27:48,146 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:27:49,369 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:27:54,546 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:27:55,792 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:31:47,475 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:31:48,731 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:32:03,974 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:32:04,922 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:32:53,981 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 14:32:53,982 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 14:32:55,549 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 14:32:55,615 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:32:55,618 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 14:32:57,866 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 14:32:57,948 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:32:57,948 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 14:32:57,997 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:32:57,997 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 14:32:59,306 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 14:33:00,581 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 14:33:00,649 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:00,649 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 03: Input email and password
+2020-04-19 14:33:00,786 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 04: Click the Login button
+2020-04-19 14:33:02,570 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-19 14:33:02,633 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:02,690 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:02,690 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-19 14:33:12,759 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:22,805 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:22,808 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:33:23,779 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:33:28,842 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 14:33:28,843 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 14:33:30,415 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 14:33:30,483 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:33:30,483 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 14:33:32,107 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 14:33:32,161 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:33:32,162 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 14:33:32,210 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:33:32,210 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 14:33:34,714 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 14:33:34,816 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 14:34:04,861 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - OS name = windows 10
+2020-04-19 14:34:05,786 INFO  com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------
+2020-04-19 14:48:31,486 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 01: Open URL
+2020-04-19 14:48:31,487 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 02: Click the Register link
+2020-04-19 14:48:33,082 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 03: Verify the Register page is displayed
+2020-04-19 14:48:33,150 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:48:33,153 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 04: Input data for all required fields
+2020-04-19 14:48:36,209 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 05: Verify a successful message displayed
+2020-04-19 14:48:36,292 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- FAILED -------------------------- 
+2020-04-19 14:48:36,293 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 06: Verify a successful registration text displayed
+2020-04-19 14:48:36,340 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:48:36,340 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Register - Step 07: Click Logout Link -> navigate to Home Page
+2020-04-19 14:48:38,819 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 01: Click the Login link
+2020-04-19 14:48:39,356 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 02: Verify the Login page is displayed
+2020-04-19 14:48:39,426 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:48:39,427 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 03: Input email and password
+2020-04-19 14:48:39,559 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 04: Click the Login button
+2020-04-19 14:48:40,470 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 05: Verify 'My Account' and 'Logout' link are displayed
+2020-04-19 14:48:40,562 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:48:40,647 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:48:40,647 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - Login - Step 06: Verify 'Register' and 'Login' link are un-displayed
+2020-04-19 14:48:50,701 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:49:00,743 INFO  com.nopcommerce.framework.Level_12_WebDriverManager -  -------------------------- PASSED -------------------------- 
+2020-04-19 14:49:00,745 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - OS name = windows 10
+2020-04-19 14:49:01,781 INFO  com.nopcommerce.framework.Level_12_WebDriverManager - ---------- QUIT BROWSER SUCCESSFULLY ----------

@@ -2,13 +2,19 @@
 <suite name="Nop Commerce" parallel="false">
 	<!-- <suite name="Nop Commerce" parallel="tests" thread-count = "4"> -->
 	<listeners>
+		<listener class-name="reportConfig.ExtentReportListener_V4" />
 		<listener class-name="commons.MethodListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 	</listeners>
 
 	<test name="Run on Firefox UI">
 		<parameter name="browser" value="firefox_ui" />
+		<parameter name="version" value="0.24.0" />
 		<classes>
-			<class name="com.nopcommerce.framework.Level_11_Assert_Verify" />
+			<class name="com.nopcommerce.framework.Level_12_WebDriverManager" />
+<!-- 			<class name="com.nopcommerce.search.Search_01" /> -->
+<!-- 			<class name="com.nopcommerce.search.Sort_02" /> -->
 		</classes>
 	</test>
 
@@ -19,12 +25,12 @@
 	<!-- </classes> -->
 	<!-- </test> -->
 
-	<!-- <test name="Run on CHROME UI "> -->
-	<!-- <parameter name = "browser" value = "chrome_ui"/> -->
-	<!-- <classes> -->
-	<!-- <class name="com.nopcommerce.framework.Level_08_WebDriverLifeCycle_ActionChain"/> -->
-	<!-- </classes> -->
-	<!-- </test> -->
+<!-- 	<test name="Run on CHROME UI "> -->
+<!-- 	<parameter name = "browser" value = "chrome_ui"/> -->
+<!-- 	<classes> -->
+<!-- 	<class name="com.nopcommerce.framework.Level_12_Close_Browser_WebDriverManager"/> -->
+<!-- 	</classes> -->
+<!-- 	</test> -->
 
 	<!-- <test name="Run on CHROME HEADLESS"> -->
 	<!-- <parameter name = "browser" value = "chrome_headless"/> -->
