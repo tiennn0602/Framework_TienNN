@@ -30,7 +30,7 @@ public class Level_12_Close_Browser extends AbstractTest {
 		email = "tien_nguyen" + randomNumber() + "@gmail.com";
 		password = "Automation";
 		homePage = PageGeneratorManager.getHomePage(driver);
-	//	Assert.assertTrue(false);
+		Assert.assertTrue(false);
 	}
 
 	@Test

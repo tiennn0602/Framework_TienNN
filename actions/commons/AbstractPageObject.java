@@ -121,8 +121,25 @@ public class AbstractPageObject {
 		element.clear();
 		element.sendKeys(value);
 	}
+	
+	// n tham so
+	public void sendKeytoElement(String locator, String valueToSendkey, String... values) {
+		locator = castRestParameters(locator, values);
+		element = find(locator);
+		element.clear();
+		element.sendKeys(valueToSendkey);
+	}
 
 	public void selectItemInDropdown(String locator, String valueItem) {
+		element = find(locator);
+		select = new Select(element);
+		select.selectByVisibleText(valueItem);
+	}
+	
+	//n tham so
+	
+	public void selectItemInDropdown(String locator, String valueItem, String...values) {
+		locator = castRestParameters(locator, values);
 		element = find(locator);
 		select = new Select(element);
 		select.selectByVisibleText(valueItem);
@@ -207,16 +224,16 @@ public class AbstractPageObject {
 		try {
 			element = find(locator);
 			overrideGlobalTimeout(longTimeout);
-			return element.isDisplayed();		
+			return element.isDisplayed();
 		} catch (NoSuchElementException e) {
 			overrideGlobalTimeout(longTimeout);
 			return false;
 		}
 	}
-	
+
 	public void overrideGlobalTimeout(long timeout) {
 		driver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
-		
+
 	}
 
 	// n tham so
@@ -226,7 +243,7 @@ public class AbstractPageObject {
 		try {
 			element = find(locator);
 			overrideGlobalTimeout(longTimeout);
-			return element.isDisplayed();		
+			return element.isDisplayed();
 		} catch (Exception e) {
 			overrideGlobalTimeout(longTimeout);
 			return false;
@@ -385,7 +402,8 @@ public class AbstractPageObject {
 	}
 
 	// 1 hàm để mở ra 28 pages hoặc n pages
-	// Nếu số lượng common pages ít (20-25 pages) thì làm cách sau, return từng page cho
+	// Nếu số lượng common pages ít (20-25 pages) thì làm cách sau, return từng page
+	// cho
 	// từng case
 
 	public AbstractPageObject openMultiplePage(String pageName) {
@@ -407,10 +425,48 @@ public class AbstractPageObject {
 		}
 	}
 
-	// Nếu số lượng common pages nhiều, cả trăm page, không cần return (quá nhiều pages),
+	// Nếu số lượng common pages nhiều, cả trăm page, không cần return (quá nhiều
+	// pages),
 	// page tự new lên trong chính TCs
 	public void openMultiplePages(String pageName) {
 		waitToElementVisible(AbstractPageUI.DYNAMIC_FOOTER_LINK, pageName);
 		clickToElement(AbstractPageUI.DYNAMIC_FOOTER_LINK, pageName);
+	}
+
+	// Dynamic Element Component
+	public void inputToDynamicTextbox(String textboxID, String value) {
+		// call waitToElementVisible 2 variables
+		waitToElementVisible(AbstractPageUI.DYNAMIC_TEXTBOX, textboxID);
+		sendKeytoElement(AbstractPageUI.DYNAMIC_TEXTBOX, value, textboxID);
+	}
+
+	public void inputToDynamicTextArea(String textareaID, String value) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_TEXTAREA, textareaID);
+		sendKeytoElement(AbstractPageUI.DYNAMIC_TEXTAREA, value, textareaID);
+	}
+
+	public void clickToDynamicButton(String buttonValue) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_BUTTON, buttonValue);
+		clickToElement(AbstractPageUI.DYNAMIC_BUTTON,buttonValue);
+	}
+
+	public void clickToDynamicRadioButton(String radioButtonID) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_RADIO_BUTTON, radioButtonID);
+		clickToElement(AbstractPageUI.DYNAMIC_RADIO_BUTTON, radioButtonID);
+	}
+
+	public void clickToDynamicCheckbox(String checkboxID) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_CHECKBOX, checkboxID);
+		clickToElement(AbstractPageUI.DYNAMIC_CHECKBOX, checkboxID);
+	}
+
+	public void selectToDynamicDropDown(String dropdownName, String valueItem) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_DROPDOWN_LIST, dropdownName);
+		selectItemInDropdown(AbstractPageUI.DYNAMIC_DROPDOWN_LIST, valueItem, dropdownName);
+	}
+
+	public String getDynamicRequiredFieldErrorMessage(String errorName) {
+		waitToElementVisible(AbstractPageUI.DYNAMIC_REQUIRED_FIELD_ERROR_MESSAGE, errorName);
+		return getTextElement(AbstractPageUI.DYNAMIC_REQUIRED_FIELD_ERROR_MESSAGE, errorName);
 	}
 }

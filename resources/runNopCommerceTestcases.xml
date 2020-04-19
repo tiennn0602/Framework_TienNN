@@ -12,7 +12,7 @@
 		<parameter name="browser" value="firefox_ui" />
 		<parameter name="version" value="0.24.0" />
 		<classes>
-			<class name="com.nopcommerce.framework.Level_12_WebDriverManager" />
+			<class name="com.nopcommerce.framework.Level_13_Dynamic_Page_Element" />
 <!-- 			<class name="com.nopcommerce.search.Search_01" /> -->
 <!-- 			<class name="com.nopcommerce.search.Sort_02" /> -->
 		</classes>

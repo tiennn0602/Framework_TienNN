@@ -19,6 +19,13 @@ public class AbstractPageUI {
 	public static final String FOOTER_SHIPPING_AND_RETURN_LINK = "//a[contains(text(),'Shipping & returns')]";
 	//18
 	
-	//Apply DYNAMIC (pageName) cho footer
+	//DYNAMIC element components
 	public static final String DYNAMIC_FOOTER_LINK = "//div[@class='footer']//a[text()='%s']";
+	public static final String DYNAMIC_TEXTBOX = "//input[@id='%s']";
+	public static final String DYNAMIC_TEXTAREA = "//input[@id='%s']";
+	public static final String DYNAMIC_BUTTON= "//input[@value='%s']";
+	public static final String DYNAMIC_RADIO_BUTTON = "//input[@id='%s']";
+	public static final String DYNAMIC_CHECKBOX = "//input[@id='%s']";
+	public static final String DYNAMIC_DROPDOWN_LIST= "//select[@name='%s']";
+	public static final String DYNAMIC_REQUIRED_FIELD_ERROR_MESSAGE= "//span[@id='%s-error']";
 }
