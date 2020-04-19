@@ -13,20 +13,7 @@
     <parameter name="browser" value="firefox_ui"/>
     <parameter name="version" value="0.24.0"/>
     <classes>
-      <class name="com.nopcommerce.framework.Level_12_WebDriverManager"/>
+      <class name="com.nopcommerce.framework.Level_13_Dynamic_Page_Element"/>
     </classes>
   </test> <!-- Run on Firefox UI -->
-  <test name="Run on Firefox UI(failed)">
-    <parameter name="browser" value="firefox_ui"/>
-    <parameter name="version" value="0.24.0"/>
-    <classes>
-      <class name="com.nopcommerce.framework.Level_12_WebDriverManager">
-        <methods>
-          <include name="TC_01_Register"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.nopcommerce.framework.Level_12_WebDriverManager -->
-    </classes>
-  </test> <!-- Run on Firefox UI(failed) -->
 </suite> <!-- Failed suite [Nop Commerce] -->
